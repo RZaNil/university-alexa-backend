@@ -1,5 +1,0 @@
-admission: Admission is done through online application.
-tuition fee: Tuition fee per semester is 60000 BDT.
-departments: The university has CSE, EEE, BBA and LAW departments.
-vice chancellor: The Vice Chancellor is Professor Dr. XYZ.
-location: The university is located in Dhaka, Bangladesh.
