@@ -1,0 +1,868 @@
+East West University - CSE Faculty Information
+
+**Source:** EWU FSE Faculty Members (https://fse.ewubd.edu/computer-science-engineering/faculty-members)
+**Generated on:** December 11, 2025
+
+================================
+PROFESSORS (5 Total)
+================================
+
+## Dr. Md. Mozammel Huq Azad Khan
+- Position: Professor
+- Email: mhakhan@ewubd.edu
+- Office: Ext: 216 || Room No# 641
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mhakhan
+
+Academic Background:
+- Ph.D in Computer Science and Engineering, Bangladesh University of Engineering and Technology (BUET), Dhaka
+- M.Sc Engg. in Computer Engineering, BUET, Dhaka
+- B.Sc Engg. in Electrical and Electronic Engineering, BUET, Dhaka
+
+Short Biography:
+Dr. Md. Mozammel Huq Azad Khan is currently a Professor of the Department of Computer Science and Engineering at East West University, Dhaka. He is one of the pioneering professors of Computer Science and Engineering in Bangladesh. He started his teaching career in 1986 and has held significant positions at RUET, Khulna University, and East West University, including founding departments and serving as Dean. His research focuses on reversible and quantum computing, among other areas.
+
+Professional Experience:
+- Professor, East West University (1999 - Present)
+- Dean, Faculty of Sciences and Engineering, Khulna University
+- Founder Head & Professor, CSE Department, Khulna University (1991 - 1999)
+- Founder Head, ECE Department, Khulna University (1997)
+- Lecturer/Professor, Rajshahi University of Engineering and Technology (1986 - 1991)
+
+Research Interests:
+- Reversible/Quantum Logic
+- Multiple-Valued Logic
+- Evolutionary Algorithms
+- Graph Problems
+- Data Mining
+- Machine Learning
+
+Selected Publications:
+- "STICA: Spanning-Tree-Based Identification of Clusters With Agglomeration for Numerical Data," IEEE Access, 2024.
+- "Rule-Based Synthesis of Ternary Reversible Up/Down Counters," IAENG Int. J. Computer Science, 2022.
+- Digital Logic Design (Book), UGC of Bangladesh, 2006.
+
+---
+
+## Dr. Shamim H Ripon
+- Position: Professor
+- Email: dshr@ewubd.edu
+- Office: Ext: 262 || Room No# 647
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/dshr
+
+Academic Background:
+- PhD in Computer Science, University of Southampton, UK
+- MSc in Computer Science, National University of Singapore
+- BSc. Engg. in Computer Science and Engineering, Khulna University
+
+Professional Experience:
+- Professor, East West University (July 2019 – Present)
+- Associate Professor, East West University (July 2013 – June 2019)
+- Post-Doctoral Fellow, University of York, UK (2010-2011)
+- Post-Doctoral Fellow, University of Glasgow, UK (2008-2010)
+
+Research Interests:
+- Software Engineering
+- Software Product Line Engineering
+- BioInformatics
+- Natural Language Processing
+- Computer Vision
+- Data Analytics
+
+---
+
+## Dr. Md. Nawab Yousuf Ali
+- Position: Professor
+- Email: nawab@ewubd.edu
+- Office: Ext: 104 || Room No# 644
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/nawab
+
+Academic Background:
+- Ph.D. in Computer Science and Engineering, Jahangirnagar University
+- M.Sc. in Computer Engineering, Lvov Polytechnic Institute, Lvov, Ukraine, USSR
+
+Short Biography:
+Dr. Md. Nawab Yousuf Ali completed his Ph.D. at Jahangirnagar University and M.Sc. in Ukraine. He has served as a Professor since October 2020 and has held various positions at East West University since 2001. His research spans NLP, Machine Learning, IoT, and Embedded Systems.
+
+Research Interests:
+- Natural Language Processing
+- Universal Networking Language
+- Machine Learning
+- Internet of Things (IoT)
+
+---
+
+## Dr. Ahmed Wasif Reza
+- Position: Dean, Faculty of Sciences and Engineering & Professor
+- Email: wasif@ewubd.edu
+- Office: Ext: 394 || Room No# 646
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/wasif
+
+Academic Background:
+- Ph.D., University of Malaya (Malaysia)
+- M.Eng.Sc., Multimedia University (Malaysia)
+- B.Sc. (Hons.) in CSE, Khulna University (Bangladesh)
+
+Short Biography:
+Dr. Ahmed Wasif Reza is the Dean of FSE and a Professor at EWU. He is an expert in OBE and quality assurance. He has authored over 375 research papers and is recognized as a top scientist in Computer Science by AD Scientific Index.
+
+Research Interests:
+- Wireless Communications
+- Biomedical Image Processing
+- Artificial Intelligence (AI) / Machine Learning (ML)
+- IoT and Robotics
+- Brain-Computer Interface (BCI)
+
+---
+
+## Dr. Taskeed Jabid
+- Position: Professor
+- Email: taskeed@ewubd.edu
+- Office: Ext: 258 || Room No# 642
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/taskeed
+
+Academic Background:
+- Ph.D. in Computer Vision and Image Processing, Kyung Hee University, South Korea
+- B.Sc. in CSE, East West University, Bangladesh
+
+Research Interests:
+- Facial Image Analysis
+- Texture Analysis
+- Bioinformatics
+- Computer Graphics
+- Image processing
+
+================================
+ASSOCIATE PROFESSORS (11 Total)
+================================
+
+## Dr. Maheen Islam
+- Position: Chairperson & Associate Professor
+- Email: maheen@ewubd.edu
+- Office: Ext: 221 || Room No# 628
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/maheen
+
+Academic Background:
+- Ph.D., University of Dhaka
+- M.Sc. in Computer Science, University of Dhaka
+- B.Sc. in Computer Science, University of Dhaka
+
+Research Interests:
+- Wireless Networks (Mesh, Sensor, Cognitive Radio)
+- Software Defined Networks
+
+---
+
+## Dr. Mohammad Rezwanul Huq
+- Position: Associate Professor
+- Email: mrhuq@ewubd.edu
+- Office: Ext: 372 || Room No# 629
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mrhuq
+
+Academic Background:
+- Ph.D. in Computer Science, University of Twente, The Netherlands
+- M.Sc. in Computer Engineering, Kyung Hee University, South Korea
+
+Research Interests:
+- Database Technology
+- Data Streams & Provenance
+- Semantic Web & Big Data
+
+---
+
+## Dr. Anisur Rahman
+- Position: Associate Professor, Proctor
+- Email: anis@ewubd.edu
+- Office: Ext: 256 || Room No# 629
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/anis
+
+Academic Background:
+- Ph.D. in ICT, Griffith University, Australia
+- M.S. in Computer Information System, University of Phoenix, USA
+
+Research Interests:
+- Computer Networks
+- Wireless Sensor Networks (Underwater & Terrestrial)
+- Localization
+
+---
+
+## Dr. Anup Kumar Paul
+- Position: Associate Professor
+- Email: anuppaul@ewubd.edu
+- Office: Ext: 117
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/anuppaul
+
+Academic Background:
+- Ph.D., Waseda University, Tokyo, Japan
+- M.Sc., University of Rajshahi, Bangladesh
+
+Professional Experience:
+- Research Engineer, KDDI Research Inc., JAPAN (2013–2016)
+
+Research Interests:
+- Deep Learning / Machine Learning
+- Wireless Sensor Networks
+- IoT Protocols
+
+---
+
+## Dr. Sarwar Jahan
+- Position: Associate Professor
+- Email: sjahan@ewubd.edu
+- Office: Ext: 165
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sjahan
+
+Academic Background:
+- Ph.D., Jahangirnagar University
+- Master of Engineering Studies, University of Technology, Sydney, Australia
+
+Research Interests:
+- Wireless Communications and Networks
+- Machine Learning
+
+---
+
+## Dr. Mohammad Salah Uddin
+- Position: Associate Professor
+- Email: uddin@ewubd.edu
+- Office: Ext: 395 || Room No# 648
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/uddin
+
+Academic Background:
+- Ph.D. in Engineering in Computer Science (Robotics), Sapienza University of Rome, Italy
+
+Research Interests:
+- Heterogeneous Robotics systems
+- IoT-Robotics
+- Computer Vision
+
+---
+
+## Dr. Md Sawkat Ali
+- Position: Associate Professor
+- Email: alim@ewubd.edu
+- Office: Ext: 154 || Room No# 627
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/alim
+
+Academic Background:
+- Ph.D., Central Queensland University, Australia
+- Master, University of New South Wales, Australia
+
+Research Interests:
+- Machine learning
+- IoT
+- Linear/Nonlinear control
+
+---
+
+## Dr. Raihan Ul Islam
+- Position: Associate Professor
+- Email: raihan.islam@ewubd.edu
+- Office: Ext: 411 || Room No# 256
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/raihan.islam
+
+Academic Background:
+- PhD in Pervasive Mobile Computing, Lulea University of Technology, Sweden
+
+Research Interests:
+- Expert System
+- Internet of Things (IoT)
+- Smart City
+- AI & Machine Learning
+
+---
+
+## Dr. Md Mostofa Kamal Rasel
+- Position: Associate Professor
+- Email: mostofa.kamal@ewubd.edu
+- Office: Ext: 351
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mostofa.kamal
+
+Academic Background:
+- Ph.D. in CSE, Kyung Hee University, South Korea
+
+Research Interests:
+- Recommendation Techniques
+- Data Compression
+- Graph Mining
+
+---
+
+## Dr. Mohammad Rifat Ahmmad Rashid
+- Position: Associate Professor
+- Email: rifat.rashid@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/rifat.rashid
+
+Academic Background:
+- PhD in Computer and Control Engineering, Polytechnic University of Turin, Italy
+
+Research Interests:
+- Computer Vision
+- NLP & LLMs
+- Semantic Web
+- Blockchain
+
+================================
+ASSISTANT PROFESSORS (11 Total)
+================================
+
+## Dr. Mohammad Manzurul Islam
+- Position: Assistant Professor
+- Email: mohammad.islam@ewubd.edu
+- Office: Ext: 106
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mohammad.islam
+
+Academic Background:
+- PhD in Cybersecurity, Federation University Australia
+
+Research Interests:
+- Cybersecurity
+- Trust
+- AI/IoT
+
+---
+
+## Dr. Md. Hasanul Ferdaus
+- Position: Assistant Professor
+- Email: hasanul.ferdaus@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/hasanul.ferdaus
+
+Academic Background:
+- Ph.D. in Computer Science (Cloud Computing), Monash University, Australia
+
+Research Interests:
+- Cloud Computing
+- Cybersecurity
+- Blockchain
+
+---
+
+## Dr. Hasan Mahmood Aminul Islam
+- Position: Assistant Professor
+- Email: hasan.mahmood@ewubd.edu
+- Office: Ext: 366 || Room No# AB-1(706)
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/hasan.mahmood
+
+Academic Background:
+- Ph.D., Aalto University School of Science and Technology, Finland
+
+Research Interests:
+- Future Internet Architecture
+- Distributed Systems
+- Internet Protocols
+
+---
+
+## Dr. Md. Atiqur Rahman
+- Position: Assistant Professor
+- Email: atiqur.rahman@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/atiqur.rahman
+
+Academic Background:
+- Ph.D. in CSE, The University of Aizu, Japan
+
+Research Interests:
+- Machine Learning
+- Deep Learning
+- Image Processing
+
+---
+
+## Dr. Md. Tauhid Bin Iqbal
+- Position: Assistant Professor
+- Email: tauhid.iqbal@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/tauhid.iqbal
+
+Academic Background:
+- Ph.D., Kyung Hee University, South Korea
+
+Research Interests:
+- Medical AI Systems
+- Deep Biometric Recognition
+- Explainable AI
+
+---
+
+## Dr. Tania Sultana
+- Position: Assistant Professor
+- Email: tania.sultana@ewubd.edu
+- Office: Ext: 257 || Room No# 630
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/tania.sultana
+
+Academic Background:
+- PhD, Kyushu University, Japan
+
+---
+
+## Dr. Farhana Huq
+- Position: Assistant Professor
+- Email: farhana.huq@ewubd.edu
+- Office: Ext: 412 || Room No# AB-1(705)
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/farhana.huq
+
+Academic Background:
+- PhD in CSE, University of Dhaka
+
+---
+
+## Dr. Nafis Sadeq
+- Position: Assistant Professor
+- Email: nafis.sadeq@ewubd.edu
+- Office: Ext: 362 || Room No# AB-1(706)
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/nafis.sadeq
+
+Academic Background:
+- Ph.D. in Computer Science, UCSD (2025)
+
+Research Interests:
+- Conversational AI
+- Recommender Systems
+- Large Language Models (LLMs)
+
+---
+
+## Dr. Hosney Jahan
+- Position: Assistant Professor
+- Email: hosney.jahan@ewubd.edu
+- Office: Ext: 151 || Room No# 627
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/hosney.jahan
+
+Academic Background:
+- PhD, Sichuan University, China
+
+---
+
+## Dr. Zubaer Ibna Mannan
+- Position: Assistant Professor
+- Email: zubaer.mannan@ewubd.edu
+- Office: Room No# AB-1(703)
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/zubaer.mannan
+
+Academic Background:
+- Ph.D., Jeonbuk National University, South Korea
+
+================================
+SENIOR LECTURERS (12 Total)
+================================
+
+## Md. Sarwar Kamal
+- Position: Senior Lecturer (On Study Leave)
+- Email: skamal@ewubd.edu
+- Office: Ext: 411
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/skamal
+- Research Interests: Bioinformatics, Data Mining & Big Data
+
+---
+
+## Rashedul Amin Tuhin
+- Position: Senior Lecturer
+- Email: mcctuhin@ewubd.edu
+- Office: Ext: 447 || Room No# 640
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mcctuhin
+- Research Interests: Social issues in computing, Cybersecurity
+
+---
+
+## Surajit Das Barman
+- Position: Senior Lecturer (On Study Leave)
+- Email: surajitbarman012@ewubd.edu
+- Office: Ext: 470 || Room No# 725
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/surajitbarman012
+- Research Interests: Wireless Power Transfer, Renewable Energy
+
+---
+
+## Amit Kumar Das
+- Position: Senior Lecturer (On Study Leave)
+- Email: akdas@ewubd.edu
+- Office: Ext: 239 || Room No# 640
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/akdas
+- Research Interests: HCI, Artificial Intelligence, Cloud Computing
+
+---
+
+## Tanni Mittra
+- Position: Senior Lecturer
+- Email: tanni@ewubd.edu
+- Office: Ext: 448 || Room No# 635
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/tanni
+- Research Interests: Knowledge Graph, Semantic Web, NLP
+
+---
+
+## Khan Mohammad Habibullah
+- Position: Senior Lecturer (On Study Leave)
+- Email: h.rana10@ewubd.edu
+- Office: Ext: 449 || Room No# 640
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/h.rana10
+- Research Interests: Energy Efficient Networking, Cloud Computing
+
+---
+
+## M. Saddam Hossain Khan
+- Position: Senior Lecturer
+- Email: saddam.cse@ewubd.edu
+- Office: Ext: 315 || Room No# 725
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/saddam.cse
+- Research Interests: VLSI Design, IoT, AI/ML
+
+---
+
+## Musharrat Khan
+- Position: Senior Lecturer
+- Email: musharrat.khan@ewubd.edu
+- Office: Ext: 329 || Room No# 636
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/musharrat.khan
+- Research Interests: Multiple-Valued Reversible Logic, Data Mining
+
+---
+
+## Mahamudul Hasan
+- Position: Senior Lecturer
+- Email: mahamudul@ewubd.edu
+- Office: Ext: 156 || Room No# 725
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mahamudul
+- Research Interests: Recommender System, Deep Learning
+
+---
+
+## Md. Mohsin Uddin
+- Position: Senior Lecturer (On Study Leave - PhD Candidate)
+- Email: mmuddin@ewubd.edu
+- Office: Ext: 411 || Room No# 725
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mmuddin
+- Research Interests: Artificial Intelligence, NLP
+
+---
+
+## Jesan Ahammed Ovi
+- Position: Senior Lecturer
+- Email: jesan@ewubd.edu
+- Office: Ext: 511 || Room No# 648
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/jesan
+- Research Interests: Data Mining, Machine Learning
+
+---
+
+## Md Al-Imran
+- Position: Senior Lecturer
+- Email: al.imran@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/al.imran
+- Research Interests: Data Science, Adversarial Network, Large Language Model
+
+================================
+LECTURERS (34 Total)
+================================
+
+## Sadia Nowrin
+- Position: Lecturer (On Study Leave)
+- Email: sadia@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sadia
+
+## Kowshika Sarker
+- Position: Lecturer (On Study Leave)
+- Email: kowshika@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/kowshika
+
+## Muhit Islam Emon
+- Position: Lecturer (On Study Leave)
+- Email: muhit.emon@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/muhit.emon
+
+## Yeasir Rayhan
+- Position: Lecturer (On Study Leave)
+- Email: yrp111@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/yrp111
+
+## Mostofa Rafid Uddin
+- Position: Lecturer (On Study Leave)
+- Email: rafid_duran@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/rafid_duran
+
+## Md. Mahir Ashhab
+- Position: Lecturer
+- Email: mahir.ashhab@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mahir.ashhab
+
+## Sadika Islam Sneha
+- Position: Lecturer
+- Email: sadika.sneha@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sadika.sneha
+
+## Md. Khalid Mahbub Khan
+- Position: Lecturer
+- Email: khalid.khan@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/khalid.khan
+
+## Amit Mandal
+- Position: Lecturer
+- Email: amit.mandal@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/amit.mandal
+
+## Nishat Tasnim Niloy
+- Position: Lecturer
+- Email: nishat.niloy@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/nishat.niloy
+
+## Mahmuda Rawnak Jahan
+- Position: Lecturer
+- Email: mahmuda.jahan@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mahmuda.jahan
+
+## Ahmed Abdal Shafi Rasel
+- Position: Lecturer
+- Email: ahmed.shafi@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/ahmed.shafi
+
+## Sadia Nur Amin
+- Position: Lecturer
+- Email: sadian.amin@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sadian.amin
+
+## Fouzia Risdin
+- Position: Lecturer
+- Email: fouzia.risdin@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/fouzia.risdin
+
+## Md. Arman Hossain
+- Position: Lecturer
+- Email: arman.hossain@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/arman.hossain
+
+## Puja Chakraborty
+- Position: Lecturer
+- Email: puja.chakraborty@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/puja.chakraborty
+
+## Khairum Islam
+- Position: Lecturer
+- Email: khairum.islam@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/khairum.islam
+
+## Nishat Tasnim
+- Position: Lecturer
+- Email: nishat.tasnim@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/nishat.tasnim
+
+## Md. Ashraful Haider Chowdhury
+- Position: Lecturer
+- Email: ashraful.chowdhury@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/ashraful.chowdhury
+
+## Md. Asif Khan Rifat
+- Position: Lecturer
+- Email: asif.rifat@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/asif.rifat
+
+## Md Sabbir Hossain
+- Position: Lecturer
+- Email: sabbir.hossain@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sabbir.hossain
+
+## Yasin Sazid
+- Position: Lecturer
+- Email: yasin.sazid@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/yasin.sazid
+
+## Rabea Khatun
+- Position: Lecturer
+- Email: rabea.khatun@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/rabea.khatun
+
+## Shatabdi Roy Moon
+- Position: Lecturer
+- Email: shatabdi.moon@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/shatabdi.moon
+
+## Sanzana Karim Lora
+- Position: Lecturer
+- Email: sanzana.lora@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/sanzana.lora
+
+## Mahmudul Islam Rakib
+- Position: Lecturer
+- Email: mahmudul.rakib@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/mahmudul.rakib
+
+## K. M. Safin Kamal
+- Position: Lecturer
+- Email: safin.kamal@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/safin.kamal
+
+## Md. Adnan Morshed
+- Position: Lecturer
+- Email: adnan.morshed@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/adnan.morshed
+
+## Asraf Ullah Rahat
+- Position: Lecturer
+- Email: asraf.rahat@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/asraf.rahat
+
+## Antu Chowdhury
+- Position: Lecturer
+- Email: antu.chowdhury@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/antu.chowdhury
+
+## Tahsin Tariq Banna
+- Position: Lecturer
+- Email: tahsin.banna@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/tahsin.banna
+
+## Muhammed Yaseen Morshed Adib
+- Position: Lecturer
+- Email: muhammed.adib@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/muhammed.adib
+
+## Nahid Hasan
+- Position: Lecturer
+- Email: nahid.hasan@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/nahid.hasan
+
+## Syed Jamiul Alam
+- Position: Lecturer
+- Email: syed.alam@ewubd.edu
+- Profile: https://fse.ewubd.edu/computer-science-engineering/faculty-view/syed.alam
+
+================================
+FACULTY SUMMARY
+================================
+
+| Category            | Count |
+|---------------------|-------|
+| Professors          | 5     |
+| Associate Professors| 11    |
+| Assistant Professors| 11    |
+| Senior Lecturers    | 12    |
+| Lecturers           | 34    |
+| TOTAL FACULTY       | 73    |
+
+================================
+KEY CONTACTS
+================================
+
+Chairperson: Dr. Maheen Islam
+- Email: maheen@ewubd.edu
+- Phone: 09666775577, Ext: 221
+- Room: 628
+
+Dean (Faculty of Sciences and Engineering): Dr. Ahmed Wasif Reza
+- Email: wasif@ewubd.edu
+- Phone: 09666775577, Ext: 394
+- Room: 646
+
+Proctor: Dr. Anisur Rahman
+- Email: anis@ewubd.edu
+- Phone: 09666775577, Ext: 256
+- Room: 629
+
+================================
+DEPARTMENT CONTACT
+================================
+
+Department of Computer Science & Engineering
+East West University
+A/2, Jahurul Islam Avenue
+Jahurul Islam City, Aftabnagar
+Dhaka-1212, Bangladesh
+
+Phone: 09666775577
+Email: cse@ewubd.edu
+Website: https://fse.ewubd.edu/computer-science-engineering
+
+================================
+FACULTY ROOM & CONTACT FAQ
+================================
+
+Q: What is Dr. Shamim H Ripon's room number?
+A: Dr. Shamim H Ripon's office is Room No# 647, Extension 262. Email: dshr@ewubd.edu
+
+Q: What is Dr. Mozammel Huq Azad Khan's room number?
+A: Dr. Md. Mozammel Huq Azad Khan's office is Room No# 641, Extension 216. Email: mhakhan@ewubd.edu
+
+Q: What is Dr. Nawab Yousuf Ali's room number?
+A: Dr. Md. Nawab Yousuf Ali's office is Room No# 644, Extension 104. Email: nawab@ewubd.edu
+
+Q: What is Dr. Ahmed Wasif Reza's room number?
+A: Dr. Ahmed Wasif Reza (Dean) is in Room No# 646, Extension 394. Email: wasif@ewubd.edu
+
+Q: What is Dr. Taskeed Jabid's room number?
+A: Dr. Taskeed Jabid's office is Room No# 642, Extension 258. Email: taskeed@ewubd.edu
+
+Q: What is Dr. Maheen Islam's room number?
+A: Dr. Maheen Islam (Chairperson) is in Room No# 628, Extension 221. Email: maheen@ewubd.edu
+
+Q: What is Dr. Mohammad Rezwanul Huq's room number?
+A: Dr. Mohammad Rezwanul Huq's office is Room No# 629, Extension 372. Email: mrhuq@ewubd.edu
+
+Q: What is Dr. Anisur Rahman's room number?
+A: Dr. Anisur Rahman (Proctor) is in Room No# 629, Extension 256. Email: anis@ewubd.edu
+
+Q: What is Dr. Mohammad Salah Uddin's room number?
+A: Dr. Mohammad Salah Uddin's office is Room No# 648, Extension 395. Email: uddin@ewubd.edu
+
+Q: What is Dr. Md Sawkat Ali's room number?
+A: Dr. Md Sawkat Ali's office is Room No# 627, Extension 154. Email: alim@ewubd.edu
+
+Q: What is Dr. Raihan Ul Islam's room number?
+A: Dr. Raihan Ul Islam's office is Room No# 256, Extension 411. Email: raihan.islam@ewubd.edu
+
+Q: What is Dr. Hasan Mahmood's room number?
+A: Dr. Hasan Mahmood Aminul Islam's office is Room No# AB-1(706), Extension 366. Email: hasan.mahmood@ewubd.edu
+
+Q: What is Dr. Tania Sultana's room number?
+A: Dr. Tania Sultana's office is Room No# 630, Extension 257. Email: tania.sultana@ewubd.edu
+
+Q: What is Dr. Farhana Huq's room number?
+A: Dr. Farhana Huq's office is Room No# AB-1(705), Extension 412. Email: farhana.huq@ewubd.edu
+
+Q: What is Dr. Nafis Sadeq's room number?
+A: Dr. Nafis Sadeq's office is Room No# AB-1(706), Extension 362. Email: nafis.sadeq@ewubd.edu
+
+Q: What is Dr. Hosney Jahan's room number?
+A: Dr. Hosney Jahan's office is Room No# 627, Extension 151. Email: hosney.jahan@ewubd.edu
+
+Q: What is Dr. Zubaer Ibna Mannan's room number?
+A: Dr. Zubaer Ibna Mannan's office is Room No# AB-1(703). Email: zubaer.mannan@ewubd.edu
+
+Q: What is Rashedul Amin Tuhin's room number?
+A: Rashedul Amin Tuhin's office is Room No# 640, Extension 447. Email: mcctuhin@ewubd.edu
+
+Q: What is Tanni Mittra's room number?
+A: Tanni Mittra's office is Room No# 635, Extension 448. Email: tanni@ewubd.edu
+
+Q: What is M. Saddam Hossain Khan's room number?
+A: M. Saddam Hossain Khan's office is Room No# 725, Extension 315. Email: saddam.cse@ewubd.edu
+
+Q: What is Musharrat Khan's room number?
+A: Musharrat Khan's office is Room No# 636, Extension 329. Email: musharrat.khan@ewubd.edu
+
+Q: What is Mahamudul Hasan's room number?
+A: Mahamudul Hasan's office is Room No# 725, Extension 156. Email: mahamudul@ewubd.edu
+
+Q: What is Jesan Ahammed Ovi's room number?
+A: Jesan Ahammed Ovi's office is Room No# 648, Extension 511. Email: jesan@ewubd.edu
+
+Q: Who is the CSE department chairperson?
+A: Dr. Maheen Islam is the CSE Department Chairperson. Her office is Room No# 628, Extension 221. Email: maheen@ewubd.edu
+
+Q: Who is the Dean of Faculty of Sciences and Engineering?
+A: Dr. Ahmed Wasif Reza is the Dean of FSE. His office is Room No# 646, Extension 394. Email: wasif@ewubd.edu
+
+Q: Who is the Proctor at EWU?
+A: Dr. Anisur Rahman is the Proctor. His office is Room No# 629, Extension 256. Email: anis@ewubd.edu
+
+Q: How can I contact the CSE department?
+A: Call 09666775577 (main line) and ask for CSE department, or email cse@ewubd.edu or helpdesk-cse@ewubd.edu
+
+Q: Where is the CSE department located?
+A: The CSE Department is located at East West University, A/2 Jahurul Islam Avenue, Aftabnagar, Dhaka-1212.
+
+Q: How do I contact a specific faculty member?
+A: You can email them directly using their EWU email (format: name@ewubd.edu) or call 09666775577 and use their extension number.
+
+Q: What are the faculty office hours?
+A: Office hours vary by faculty member and semester. Check the course outline provided at the start of each semester, or visit the faculty member's office door for posted hours.
+
+Q: Can I meet a faculty member without an appointment?
+A: It is recommended to email the faculty member first to schedule a meeting. Walk-in visits may not always be possible.

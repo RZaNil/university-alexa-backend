@@ -1,0 +1,373 @@
+EWU CSE Program - Complete Course & Curriculum Guide
+
+## Program Overview
+
+### Total Credit Requirements
+The total requirement for the CSE program is 140 credits.
+
+================================
+CREDIT BREAKDOWN BY CATEGORY
+================================
+
+## Compulsory Language & GED Courses (9 Credits)
+You must complete 9 credits from:
+- ENG101 – Basic English (3 credits)
+- ENG102 – Composition & Communication Skills (3 credits, requires ENG101)
+- GEN226 – Emergence of Bangladesh (3 credits, requires ENG102)
+
+## Elective GED Courses (9 Credits)
+9 credits required, including one course from each category:
+- Social Science (3 credits)
+- Arts/Humanities (3 credits)
+- Business (3 credits)
+
+## Science Courses (11 Credits)
+- PHY109 – Engineering Physics I (4 credits, requires MAT102)
+- PHY209 – Engineering Physics II (3 credits, requires MAT205)
+- CHE109 – Engineering Chemistry (4 credits)
+
+## Compulsory Math & Statistics Courses (15 Credits)
+- MAT101 – Differential & Integral Calculus (3 credits)
+- MAT102 – Differential Equations (3 credits, requires MAT101)
+- MAT104 – Coordinate Geometry & Vector Analysis (3 credits, requires MAT101)
+- MAT205 – Linear Algebra & Complex Variable (3 credits, requires MAT102)
+- STA102 – Statistics & Probability (3 credits, no prerequisite)
+
+## Core CSE Courses (62 Credits)
+Core courses include:
+- CSE103 – Structured Programming (4.5 credits, no prerequisite)
+- CSE106 – Discrete Mathematics (3 credits, requires CSE103)
+- CSE110 – Object Oriented Programming (4.5 credits, requires CSE106)
+- CSE200 – Computer-Aided Engineering Drawing
+- CSE207 – Data Structures (4.5 credits, requires CSE110)
+- CSE209 – Electrical Circuits
+- CSE246 – Algorithms (3 credits, requires CSE207)
+- CSE251 – Electronic Circuits (requires CSE209)
+- CSE302 – Database Systems (4.5 credits with lab, requires CSE106)
+- CSE325 – Operating Systems (requires CSE207)
+- CSE345 – Digital Logic Design (with 1-credit lab, requires CSE251)
+- CSE347 – Information System Analysis & Design (requires CSE302)
+- CSE350 – Data Communications
+- CSE360 – Computer Architecture (theory-only, requires CSE325)
+- CSE405 – Computer Networks (requires CSE246)
+- CSE487 – Cyber Security, Ethics & Law (requires CSE405)
+
+## Capstone Project (6 Credits)
+CSE400 – Capstone Project is 6 credits completed across 3 semesters.
+
+## Major Area Requirements (20 Credits)
+- 2 compulsory major courses
+- 3 major electives
+
+## Non-Major Electives (8 Credits Minimum)
+Minimum 8 credits from non-major elective list including:
+- CSE225 – Numerical Methods
+- CSE313 – Theory of Computation
+- CSE460 – Cryptography
+- CSE471 – Compiler Design (requires CSE246)
+- CSE483 – Graph Theory
+- CSE484 – Computational Geometry
+
+================================
+MAJOR SPECIALIZATIONS
+================================
+
+## Data Science Major
+Compulsory Courses:
+- CSE303 – Statistics for Data Science
+- CSE366 – Artificial Intelligence
+
+Elective Courses:
+- CSE420 – Computer Graphics
+- CSE438 – Digital Image Processing (requires CSE246)
+- CSE445 – Computer Vision
+- CSE452 – Distributed Systems
+- CSE474 – Pattern Recognition (requires CSE366)
+- CSE477 – Data Mining
+- CSE478 – Machine Learning
+- CSE486 – Bioinformatics Algorithms
+- CSE488 – Big Data Analytics
+- CSE470 – Nature Inspired Computing
+
+## Software Engineering Major
+Compulsory Courses:
+- CSE412 – Software Engineering
+- CSE430 – Software Testing & Quality Assurance (requires CSE412)
+
+Elective Courses:
+- CSE418 – Advanced Database Systems
+- CSE422 – Simulation & Modeling
+- CSE428 – Human Computer Interaction (HCI) (requires CSE412)
+- CSE452 – Distributed Systems
+- CSE479 – Web Programming (requires CSE302)
+- CSE489 – Mobile Programming (requires CSE246)
+
+## Networking Major
+Compulsory Courses:
+- CSE350 – Data Communications
+- CSE432 – Digital Signal Processing (requires CSE246)
+
+Elective Courses:
+- CSE452 – Distributed Systems
+- CSE453 – Wireless Networks
+- CSE457 – Cellular Networks
+- CSE472 – Advanced Network Services & Management (requires CSE405)
+- CSE473 – Network Security & Systems
+
+## Hardware Engineering Major
+Compulsory Courses:
+- CSE355 – Digital System Design
+- CSE442 – Microprocessors & Microcontrollers
+
+Elective Courses:
+- CSE446 – ASIC Design Using FPGA
+- CSE492 – Robotics
+- CSE494 – Embedded Systems
+- CSE495 – IoT (Internet of Things)
+
+================================
+GED ELECTIVES BY CATEGORY
+================================
+
+## Social Science Electives
+- ECO101 – Principles of Microeconomics
+- GEN203 – Ecological System & Environment
+- GEN214 – Development Studies
+- SOC317 – Sociology of Science & Technology
+
+## Arts/Humanities Electives
+- GEN201 – Bangladesh Studies
+- GEN204 – Western Thought
+- GEN210 – International Relation
+- SOC211 – Eastern Culture & Heritage
+- SOC217 – Religion, Ethnicity, Culture & Development
+
+## Business Electives
+- ACT101 – Financial Accounting
+
+================================
+CSE CURRICULUM FAQ
+================================
+
+Q: How many credits are required for CSE?
+A: Total 140 credits are required for B.Sc. in CSE.
+
+Q: What are the major areas in CSE?
+A: There are 4 major areas: Intelligent Systems (Data Science), Software Engineering, Networking, and Hardware Engineering.
+
+Q: What is the prerequisite for CSE366 Artificial Intelligence?
+A: CSE246 (Algorithms) is the prerequisite for CSE366.
+
+Q: What is the prerequisite for CSE428 HCI?
+A: CSE412 (Software Engineering) is the prerequisite.
+
+Q: Is CSE103 a prerequisite for any course?
+A: Yes, CSE103 (Structured Programming) is required for CSE106 (Discrete Math).
+
+Q: How many credits is the Capstone Project?
+A: CSE400 Capstone Project is 6 credits, taken over 3 semesters.
+
+Q: Which math courses are compulsory?
+A: MAT101, MAT102, MAT104, MAT205, and STA102 are compulsory.
+
+Q: I am a 1st year student, what courses should I take?
+A: In your 1st year (freshman year), you cover 3 semesters:
+
+1st Semester:
+1. CSE103: Structured Programming (4.5)
+2. ENG101: Basic English (3)
+3. MAT101: Differential Calculus (3)
+
+2nd Semester:
+1. CSE106: Discrete Mathematics (3)
+2. ENG102: Composition & Communication (3)
+3. MAT102: Differential Equations (3)
+4. CHE109: Engineering Chemistry (4)
+
+3rd Semester:
+1. CSE110: Object Oriented Programming (4.5)
+2. PHY109: Engineering Physics I (4)
+3. STA102: Statistics & Probability (3)
+4. GEN226: Emergence of Bangladesh (3)
+
+================================
+SEMESTER-BY-SEMESTER COURSE GUIDE
+================================
+
+## 1st Semester
+- ENG101 – Basic English
+- MAT101 – Calculus
+- CSE103 – Structured Programming
+- CSE209 – Electrical Circuits
+
+## 2nd Semester
+- ENG102 – Composition & Communication
+- MAT102 – Differential Equations
+- CSE106 – Discrete Mathematics
+- CHE109 – Engineering Chemistry
+
+## 3rd Semester
+- PHY109 – Engineering Physics I
+- MAT104 – Coordinate Geometry & Vector Analysis
+- CSE110 – Object Oriented Programming
+
+## 4th Semester
+- GEN226 – Emergence of Bangladesh
+- STA102 – Statistics & Probability
+- CSE200 – Computer-Aided Engineering Drawing
+
+Total Program Duration: 12 semesters across 4 years.
+
+================================
+COURSE TOPICS AND CONTENT
+================================
+
+## Programming Courses
+- CSE103 – Structured Programming: Programming fundamentals, basic syntax
+- CSE110 – Object Oriented Programming: OOP concepts, object-oriented design
+- CSE207 – Data Structures: Recursion, stack, queue, linked list, binary trees, heaps, hash tables
+- CSE246 – Algorithms: BFS, DFS, graph traversal, greedy algorithms, dynamic programming, complexity analysis, shortest-path algorithms
+- CSE471 – Compiler Design: Compiler phases and construction
+
+## Systems Courses
+- CSE302 – Database Systems: SQL, relational databases, ER diagrams, file organization, data modeling
+- CSE325 – Operating Systems: Memory management, scheduling, file systems, disk scheduling, deadlocks, process management
+- CSE360 – Computer Architecture: CPU design, instruction set architecture (ISA), pipeline, caching, memory hierarchy
+- CSE345 – Digital Logic Design: Boolean algebra, logic gates, flip-flops, counters, registers, digital circuits
+
+## Networking & Security Courses
+- CSE405 – Computer Networks: Network layers, TCP/IP, IP addressing, routing, switching, routing algorithms
+- CSE487 – Cyber Security, Ethics & Law: Firewalls, ethical hacking, cyber laws, secure communication
+- CSE350 – Data Communications: Modulation, error detection, digital communication theory
+- CSE453 – Wireless Networks: Wireless transmission and protocols
+- CSE457 – Cellular Networks: 4G/5G technologies, mobility management
+
+## AI & Data Science Courses
+- CSE366 – Artificial Intelligence: AI foundations, search algorithms
+- CSE303 – Statistics for Data Science: Regression, probability, hypothesis testing, essential math for ML
+- CSE478 – Machine Learning: Machine learning fundamentals
+- CSE474 – Pattern Recognition: Neural networks, pattern classification
+- CSE477 – Data Mining: Classification and clustering
+- CSE438 – Digital Image Processing: Convolution, filtering, image enhancement
+- CSE445 – Computer Vision: Object detection, feature extraction
+- CSE488 – Big Data Analytics: Hadoop, Spark, Big Data frameworks
+
+## Hardware & Electronics Courses
+- CSE209 – Electrical Circuits: Electrical circuit concepts
+- CSE251 – Electronic Circuits: Transistor circuits, amplifiers, diodes, MOSFET operation
+- CSE442 – Microprocessors & Microcontrollers: Microcontroller programming
+- CSE492 – Robotics: Robotics mechanisms
+- CSE494 – Embedded Systems: Embedded systems programming
+- CSE446 – ASIC Design Using FPGA: FPGA design
+
+## Software Engineering Courses
+- CSE412 – Software Engineering: Agile, Scrum methodologies, requirement analysis, project documentation
+- CSE430 – Software Testing & QA: Testing strategies, QA process
+- CSE428 – HCI: User Interface (UI) and UX design
+- CSE347 – Information System Analysis & Design: UML diagrams, system modeling
+- CSE479 – Web Programming: HTML, CSS, JavaScript, backend basics
+- CSE489 – Mobile Programming: Android-based mobile app development
+
+## Math & Science Courses
+- MAT101 – Calculus: Differential & Integral Calculus
+- MAT102 – Differential Equations: Differential equations
+- MAT104 – Coordinate Geometry & Vector Analysis: Vector geometry
+- MAT205 – Linear Algebra: Linear algebra, complex variables
+- STA102 – Statistics & Probability: Probability and data analysis
+- PHY109 – Engineering Physics I: Classical mechanics
+- PHY209 – Engineering Physics II: Quantum physics basics
+- CHE109 – Engineering Chemistry: Basic chemistry for CSE
+
+================================
+PREREQUISITES QUICK REFERENCE
+================================
+
+CSE106 requires CSE103
+CSE110 requires CSE106
+CSE207 requires CSE110
+CSE246 requires CSE207
+CSE302 requires CSE106
+CSE325 requires CSE207
+CSE345 requires CSE251
+CSE360 requires CSE325
+CSE405 requires CSE246
+CSE487 requires CSE405
+ENG102 requires ENG101
+GEN226 requires ENG102
+PHY109 requires MAT102
+PHY209 requires MAT205
+MAT102 requires MAT101
+MAT104 requires MAT101
+MAT205 requires MAT102
+CSE251 requires CSE209
+CSE471 requires CSE246
+CSE474 requires CSE366
+CSE430 requires CSE412
+CSE428 requires CSE412
+CSE472 requires CSE405
+CSE479 requires CSE302
+CSE489 requires CSE246
+CSE438 requires CSE246
+
+================================
+FREQUENTLY ASKED QUESTIONS
+================================
+
+Q: Can I take CSE246 before completing CSE207?
+A: No. CSE246 – Algorithms requires CSE207 – Data Structures.
+
+Q: Does CSE302 have a lab component?
+A: Yes. CSE302 – Database Systems is a 4.5-credit course with lab.
+
+Q: Which major requires strong programming knowledge?
+A: Intelligent Systems & Data Science (CSE366, CSE478, CSE474) and Software Engineering (CSE412, CSE430).
+
+Q: Which major requires strong math background?
+A: Data Science major, including courses like CSE303, CSE366, CSE478.
+
+Q: Which major requires strong circuit knowledge?
+A: Hardware Engineering major (CSE355, CSE442).
+
+Q: What is the heaviest semester in 1st year?
+A: Usually the 3rd semester with PHY109, MAT104, and CSE110.
+
+Q: What is the lightest semester?
+A: 4th semester with GEN226, STA102, and CSE200.
+
+Q: What is considered the easiest major?
+A: Most students find Software Engineering major easier than others.
+
+Q: What is the hardest major?
+A: Generally Data Science major, due to CSE303, CSE366, CSE478.
+
+Q: Which major is most practical and hands-on?
+A: Hardware Engineering major (CSE355, CSE442, CSE492).
+
+Q: Which major is most research-focused?
+A: Data Science major.
+
+Q: Can I take more than one elective from a GED category?
+A: Yes, but only one from each category counts toward required 9 credits.
+
+================================
+OTHER COURSES
+================================
+
+## Project Management
+- CSE495 – IT Project Management & Entrepreneurship: Project planning, risk management, entrepreneurship
+
+## Signal Processing
+- CSE432 – Digital Signal Processing: Fourier transforms, digital filtering
+
+## Distributed Systems
+- CSE452 – Distributed Systems: Distributed file systems, cluster computing, real-time distributed systems
+
+## Simulation
+- CSE422 – Simulation & Modeling: Real-world system modeling, simulation tools
+
+## Theory Courses
+- CSE313 – Theory of Computation: Automata theory, Turing machines
+- CSE225 – Numerical Methods: Numerical solutions to integrals and equations
+- CSE483 – Graph Theory: Graph concepts
+- CSE484 – Computational Geometry: Algorithmic geometry
+- CSE460 – Cryptography: Cryptographic algorithms

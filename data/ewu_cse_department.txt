@@ -1,0 +1,285 @@
+EWU CSE Department Home
+
+## Chairperson's Message
+
+Department Chairperson:
+Dr. Maheen Islam
+Telephone: 09666775577
+Ext – 221
+Email: maheen@ewubd.edu
+
+The Department of Computer Science and Engineering (CSE) at East West University (EWU) welcomes you. EWU is one of the few private universities in Bangladesh that has received a Permanent Certificate from the Ministry of Education. The CSE Department was founded in 1996 at the very beginning of the university's establishment and is now the second largest department at EWU with about 1,200 students and 28 qualified full-time faculty members (11 faculties having Ph.D. degrees from reputed universities).
+
+================================
+PROGRAMS OFFERED
+================================
+
+- B.S. in Computer Science and Engineering
+- M.S. in Computer Science and Engineering
+
+The CSE Department is well-equipped with state-of-the-art facilities for teaching and research. Key research areas include Software Systems, Information Systems, Intelligent Systems, Hardware Systems, and Networking Systems.
+
+================================
+VISION STATEMENT
+================================
+
+To be internationally renowned in Computer Science and Engineering and to exalt excellence in education, research, and industrial profession for sustainable transformation of the society.
+
+================================
+MISSION
+================================
+
+(i) To advance knowledge and learning of evolving challenges in Computer Science and Engineering through quality education and research towards the development of the society.
+(ii) To sustain an outstanding hub dedicated to excellence in teaching, learning, and research and to become internationally recognized to meet national and international needs.
+(iii) To enhance the quality of students with advanced knowledge and skills of Computer Science and Engineering to meet contemporary industrial requirements.
+
+================================
+PROGRAM EDUCATIONAL OBJECTIVES (PEOs)
+================================
+
+Graduates of the B. Sc. in CSE program are expected to attain the following within 3-5 years of graduation:
+
+PEO1: Graduates will establish themselves as leading computational professionals and continue to learn and address evolving challenges in Computer Science and Engineering.
+PEO2: Graduates will engage in lifelong pursuit of knowledge and interdisciplinary learning for industrial, research, and academic careers.
+PEO3: Graduates will contribute to sustainable development and the well-being of society through the use of Computer Science and Engineering principles, practices and tools in an ethical and responsible manner.
+
+================================
+ACCREDITATION
+================================
+
+The B.Sc. in CSE program at EWU has been accredited as a professional degree program by the Board of Accreditation for Engineering and Technical Education (BAETE) of the Institution of Engineers, Bangladesh (IEB). Our CSE graduates can become members of IEB.
+
+================================
+EMPLOYMENT AND ALUMNI SUCCESS
+================================
+
+EWU graduates have excellent job prospects in IT Parks and other IT/ITES industries in Bangladesh and abroad. More than 100 EWU students have completed postgraduate studies domestically and internationally, including in the USA, UK, Canada, Germany, Australia, Ireland, Sweden, Italy, and Korea. Many alumni are now faculty members in various universities in Bangladesh and engage in research labs worldwide. Our alumni work at prestigious companies including Google, Microsoft, NVIDIA, Two Sigma, NewsCred, Samsung, Huawei, Ericsson, Grameenphone, and many others.
+
+EWU was proudly included in Honorable Mention in ACM ICPC World Final 2008.
+
+================================
+FACULTY MEMBERS
+================================
+
+PROFESSORS:
+- Dr. Md. Mozammel Huq Azad Khan, Professor
+- Dr. Shamim H Ripon, Professor
+- Dr. Md. Nawab Yousuf Ali, Professor
+- Dr. Ahmed Wasif Reza, Dean, Professor
+- Dr. Taskeed Jabid, Professor
+
+ASSOCIATE PROFESSORS:
+- Dr. Maheen Islam, Chairperson, Associate Professor
+- Dr. Mohammad Rezwanul Huq, Associate Professor
+- Dr. Anisur Rahman, Associate Professor
+- Dr. Anup Kumar Paul, Associate Professor, Proctor
+- Dr. Sarwar Jahan, Associate Professor
+- Dr. Mohammad Salah Uddin, Associate Professor (Ext: 395, Room No# 648, Email: uddin@ewubd.edu)
+- Dr. Md Sawkat Ali, Associate Professor
+- Dr. Raihan Ul Islam, Associate Professor
+- Dr. Md Mostofa Kamal Rasel, Associate Professor
+- Dr. Mohammad Rifat Ahmmad Rashid, Associate Professor
+
+ASSISTANT PROFESSORS:
+- Dr. Mohammad Manzurul Islam, Assistant Professor
+- Dr. Md. Hasanul Ferdaus, Assistant Professor
+- Dr. Hasan Mahmood Aminul Islam, Assistant Professor
+- Dr. Md. Atiqur Rahman, Assistant Professor
+- Dr. Md. Tauhid Bin Iqbal, Assistant Professor
+- Dr. Tania Sultana, Assistant Professor
+- Dr. Farhana Huq, Assistant Professor
+- Dr. Nafis Sadeq, Assistant Professor
+- Dr. Hosney Jahan, Assistant Professor
+- Dr. Zubaer Ibna Mannan, Assistant Professor
+
+SENIOR LECTURERS:
+- Md. Sarwar Kamal, Senior Lecturer (On Study Leave)
+- Rashedul Amin Tuhin, Senior Lecturer
+- Surajit Das Barman, Senior Lecturer (On Study Leave)
+- Amit Kumar Das, Senior Lecturer (On Study Leave)
+- Tanni Mittra, Senior Lecturer
+- Khan Mohammad Habibullah, Senior Lecturer (On Study Leave)
+- M. Saddam Hossain Khan, Senior Lecturer
+- Musharrat Khan, Senior Lecturer
+- Mahamudul Hasan, Senior Lecturer
+- Md. Mohsin Uddin, Senior Lecturer
+- Jesan Ahammed Ovi, Senior Lecturer
+- Md Al-Imran, Senior Lecturer
+
+LECTURERS (Partial List):
+- Sadia Nowrin, Lecturer (On Study Leave)
+- Kowshika Sarker, Lecturer (On Study Leave)
+- Muhit Islam Emon, Lecturer (On Study Leave)
+- Yeasir Rayhan, Lecturer (On Study Leave)
+- Mostofa Rafid Uddin, Lecturer (On Study Leave)
+- Md. Mahir Ashhab, Lecturer
+- Sadika Islam Sneha, Lecturer
+- Md. Khalid Mahbub Khan, Lecturer
+- Amit Mandal, Lecturer
+- Nishat Tasnim Niloy, Lecturer
+- Mahmuda Rawnak Jahan, Lecturer
+- And many others
+
+Total faculty count: Approximately 59 faculty members
+
+================================
+LAB FACILITIES
+================================
+
+The Faculty of Sciences and Engineering at EWU has developed one of the best lab facilities in the country. The CSE department shares engineering labs with ECE and EEE departments.
+
+KEY LABORATORIES:
+
+1. ELECTRICAL CIRCUITS AND MACHINES LAB:
+State-of-the-art Lab-Volt electro-mechanical training systems, DC machines, transformers, induction motors, synchronous machines, oscilloscopes, signal generators, and various measuring instruments.
+
+2. ELECTRONICS LAB:
+Equipped with modern digital storage oscilloscopes, analog and digital trainer boards, signal generators, DC power supply, IC chips, MOSFETs, BJTs, and other semiconductor devices.
+
+3. SWITCHGEAR AND CONTROL SYSTEMS LAB:
+Five sets of ADVANTECH data acquisition cards, Siemens PLC (S7-1200) with input/output modules for industrial control systems training.
+
+4. VLSI LAB:
+More than 40 state-of-the-art dual core workstations and 2 servers running on MS Windows and Linux platforms. Software tools include ADS, MAGIC, HSPICE, ANSOFT, MATLAB, PSPICE.
+
+5. SOFTWARE ENGINEERING LAB:
+HP Server, 30 Lenovo desktop computers, multimedia projector. All computers are networked using CISCO switches. Supports programming, database systems, information system design, software engineering, computer networking, and high-performance simulation.
+
+6. DIGITAL SYSTEMS LAB:
+Digital storage oscilloscopes, digital trainer boards, micro-controllers, interfacing adapters, data acquisition cards, and FPGA design hardware.
+
+7. TELECOMMUNICATION LAB:
+TIMS-301 basic system, PC-based virtual instruments, TIMS-Interactives for simulation, Emona TIMS advanced modules, microwave trainers, DSP trainers, cellular mobile trainers, analog and digital communication trainers, and optical fiber communication trainers.
+
+8. COMPUTER COMMUNICATIONS AND NETWORKING LAB:
+One high-performance server, twenty workstations, switches, routers, networking kits, radio equipment for wireless networks, point-point XDSL/VDSL/HDSL, and supporting instruments.
+
+9. PHYSICS LAB:
+Modern instruments for physics experiments with dark room facility for optical experiments.
+
+Additional Specialized Labs:
+- A.I. Lab (Ext: 594, Lab Officer: Md. Ishtiak Chowdhury)
+- Database Lab (Ext: 492, Lab Officer: Md. Sohel Rana)
+- Big Data Analytics Lab (Ext: 502, Lab Officer: Md. Hasan Mahmud)
+- Cyber Security Lab (Ext: 498, Lab Officer: Abu Sayem Arman)
+- Virtual Reality and Augmented Reality Lab (Lab Officer: Abir Mridha)
+
+================================
+ADMINISTRATIVE OFFICIALS
+================================
+
+- Sk. Habibur Rahman, Assistant Registrar (Junior), Ext: 206, Email: habib27@ewubd.edu
+- Monirul Islam, Senior Lab Officer (Software Engineering Lab), Ext: 259, Email: kochi@ewubd.edu
+- Md. Ali Asgar, Senior Lab Officer, Ext: 145, Email: ali.asgar@ewubd.edu
+- Md. Ishtiak Chowdhury, Senior Lab Officer (A.I. Lab), Ext: 594, Email: ishtiak.cse@ewubd.edu
+- Md. Sohel Rana, Senior Lab Officer (Database Lab), Ext: 492, Email: sohelcse@ewubd.edu
+- Md. Shaif Anam, Senior Lab Officer (Digital Systems Lab), Ext: 266, Email: shaif.anam@ewubd.edu
+- Md. Hasan Mahmud, Senior Lab Officer (Big Data Analytics Lab), Ext: 502, Email: mdhasan.mahmud@ewubd.edu
+- Abu Sayem Arman, Senior Lab Officer (Cyber Security Lab), Ext: 498, Email: sayem.arman@ewubd.edu
+- Abir Mridha, Senior Lab Officer (VR/AR Lab), Email: abir.mridha@ewubd.edu
+- Ahsan Ahmed, Senior Departmental Officer, Ext: 219, Email: ahsan.ahmed@ewubd.edu
+- Shitol Chandro Sarker, Senior Lab Officer, Ext: 595, Email: shitol.sarker@ewubd.edu
+- Md. Imran Hossain, Senior Lab Officer, Ext: 597, Email: imran.hossain@ewubd.edu
+
+================================
+ONGOING RESEARCH AREAS
+================================
+
+The CSE Department conducts research in the following areas:
+
+CORE RESEARCH TOPICS:
+- Reversible/Quantum Logic
+- Multiple-Valued Logic
+- Evolutionary Algorithms
+- Graph Problems
+- Data Mining
+- Machine Learning
+- Software Engineering
+- Software Product Line Engineering
+- Bioinformatics
+- Natural Language Processing
+- Computer Vision
+- Data Analytics
+- Supply Chain Management
+- Formal Verification
+
+ONGOING PROJECTS:
+- Speech Audio to Emotion Detection
+- Tea Leaf Disease Detection using Deep Learning
+- Detection of Various Stages of Diabetic Retinopathy from Fundus Images: Bangladesh Perspective
+- Deep Learning Based Emotion Detection from EEG Signals
+- Alzheimer Disease and Stage Detection from Brain Images
+- Designing an Intelligent Chatbot
+- Classification and Analysis of Software Defects
+- Analysis of Network Intrusion and Detection: Data Mining Approach
+- Rough Set in Bioinformatics
+- Application of Data Analytics in Supply Chain Management
+- Data Mining in Bioinformatics, Disease Diagnosis and Prediction
+- Software Product Line Requirement Management
+- Recommender-Based Service Composition Verification
+- Natural Language Processing
+- Universal Networking Language
+- Internet of Things (IoT)
+- Embedded Systems
+- Radio Frequency Identification (RFID)
+- Radio Wave Propagation
+- Wireless Sensor Network
+- Wireless Communications
+- Biomedical and Neurological Image Processing/Imaging
+- Optimization
+- Artificial Intelligence/Machine Learning
+- Deep Learning
+- Robotics and Internet of Things
+- Green Computing/IT and Sustainable Development
+- Brain Machine Interface
+- Biomedical Signal Processing
+- Cognitive Radio
+- Electromagnetics
+
+PUBLICATION FOCUS AREAS:
+- Artificial Intelligence & Machine Learning: Explainable AI (XAI), Transformer models, Neural Networks (CNNs, LSTMs), evolutionary algorithms
+- Healthcare & Medical Imaging: Disease detection (breast cancer, pancreatic cancer, malaria, heart disease, kidney tumors, retinal diseases) using Deep Learning and CT/MRI scans
+- Data Analytics & Clustering: Novel clustering algorithms, data mining, sentiment analysis
+- Hardware & Circuits: Quantum computing circuits, reversible logic synthesis, digital system design
+- IoT & Environment: Microplastic detection, cropping pattern prediction, smart systems
+
+The department actively publishes in international journals (IEEE Access, IEEE Transactions) and conferences (IEEE COMPAS, ICDMIS, ICIDA, ICCIT, ICSEC), with contributions to Springer Nature series.
+
+================================
+CONTACT INFORMATION
+================================
+
+Department of Computer Science & Engineering
+East West University
+A/2, Jahurul Islam Avenue
+Jahurul Islam City, Aftabnagar
+Dhaka-1212, Bangladesh
+
+Chairperson: Dr. Maheen Islam
+Telephone: 09666775577, Ext – 221
+Email: maheen@ewubd.edu
+
+================================
+CSE DEPARTMENT FAQ
+================================
+
+Q: Is the CSE program accredited?
+A: Yes, the B.Sc. in CSE program is accredited by BAETE (IEB).
+
+Q: How many faculty members are there in CSE?
+A: There are approximately 59 faculty members (28 full-time) in the CSE department.
+
+Q: Who is the Chairperson of CSE?
+A: Dr. Maheen Islam is the Chairperson.
+
+Q: What research areas does the department focus on?
+A: Key areas include Software Systems, Intelligent Systems, Hardware Systems, Networking, and Information Systems.
+
+Q: Where do CSE alumni work?
+A: Alumni work at Google, Microsoft, Amazon, Samsung, Huawei, etc., and pursue higher studies globally.
+
+Q: What lab facilities are available for CSE students?
+A: CSE has multiple labs including Software Engineering Lab, VLSI Lab, Digital Systems Lab, Electronics Lab, and Networking Lab with modern equipment.
+
+Q: Does EWU CSE participate in programming contests?
+A: Yes! EWU was in Honorable Mention in ACM ICPC World Final 2008. The Computer Programming Club (EWUCoPC) organizes regular contests.

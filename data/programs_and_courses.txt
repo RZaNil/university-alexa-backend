@@ -1,0 +1,292 @@
+UNDERGRADUATE PROGRAMS - B.Sc. in Computer Science and Engineering
+
+PROGRAM DETAILS:
+Total Credits: 140
+Duration: 4 years (minimum)
+Fee per Credit: Tk. 6,500
+Total Tuition Fees: Tk. 904,000
+Lab & Activities Fees: Tk. 74,400
+Admission Fee: Tk. 25,000
+Grand Total: Tk. 1,003,400
+
+COURSE SUMMARY:
+- Compulsory Language and General Education Courses: 9 credits
+- Elective General Education Courses: 9 credits
+- Compulsory Basic Science Courses: 11 credits
+- Compulsory Mathematics and Statistics Courses: 15 credits
+- Core Computer Science and Engineering Courses: 62 credits
+- Core Capstone Project: 6 credits
+- Major Compulsory and Elective CSE Courses: 20 credits
+- Non-major Elective CSE Courses: 8 credits
+
+FOUR MAJOR AREAS:
+
+1. INTELLIGENT SYSTEMS AND DATA SCIENCE (20 credits)
+Compulsory Courses (8 credits):
+- CSE303: Statistics for Data Science (3+1=4 credits) - Prerequisite: STA102
+- CSE366: Artificial Intelligence (3+1=4 credits) - Prerequisite: CSE246
+
+Elective Courses (choose any 3, total 12 credits):
+- CSE420: Computer Graphics (3+1=4 credits) - Prerequisite: CSE246
+- CSE438: Digital Image Processing (3+1=4 credits) - Prerequisite: CSE246
+- CSE445: Computer Vision (3+1=4 credits) - Prerequisite: CSE246
+- CSE452: Distributed Systems and Algorithms (3+1=4 credits) - Prerequisite: CSE325
+- CSE474: Pattern Recognition (3+1=4 credits) - Prerequisite: CSE366
+- CSE475: Machine Learning (3+1=4 credits) - Prerequisite: CSE366
+- CSE477: Data Mining (3+1=4 credits) - Prerequisite: CSE366
+- CSE481: Nature-Inspired Computing (3+1=4 credits) - Prerequisite: CSE246
+- CSE486: Bioinformatics Algorithms (3+1=4 credits) - Prerequisite: CSE246
+- CSE488: Big Data Analytics (3+1=4 credits) - Prerequisite: CSE302
+
+2. SOFTWARE ENGINEERING (20 credits)
+Compulsory Courses (8 credits):
+- CSE412: Software Engineering (3+1=4 credits) - Prerequisite: CSE347
+- CSE430: Software Testing and Quality Assurance (3+1=4 credits) - Prerequisite: CSE412
+
+Elective Courses (choose any 3, total 12 credits):
+- CSE422: Simulation and Modeling (3+1=4 credits) - Prerequisite: CSE246
+- CSE423: Software Architecture (3+1=4 credits) - Prerequisite: CSE412
+- CSE428: Human Computer Interactions (3+1=4 credits) - Prerequisite: CSE412
+- CSE452: Distributed Systems and Algorithms (3+1=4 credits) - Prerequisite: CSE325
+- CSE464: Advanced Database System (3+1=4 credits) - Prerequisite: CSE302
+- CSE479: Web Programming (3+1=4 credits) - Prerequisite: CSE302
+- CSE489: Mobile Programming (3+1=4 credits) - Prerequisite: CSE246
+
+3. COMMUNICATIONS AND NETWORKING (20 credits)
+Compulsory Courses (8 credits):
+- CSE350: Data Communications (3+1=4 credits) - Prerequisite: CSE251
+- CSE432: Digital Signal Processing (3+1=4 credits) - Prerequisite: CSE246
+
+Elective Courses (choose any 3, total 12 credits):
+- CSE452: Distributed Systems and Algorithms (3+1=4 credits) - Prerequisite: CSE325
+- CSE453: Wireless Networks (3+1=4 credits) - Prerequisite: CSE405
+- CSE457: Cellular Networks (3+1=4 credits) - Prerequisite: CSE405
+- CSE472: Advanced Network Services and Management (3+1=4 credits) - Prerequisite: CSE405
+- CSE473: Network Security and Systems (3+1=4 credits) - Prerequisite: CSE405
+- CSE489: Mobile Programming (3+1=4 credits) - Prerequisite: CSE246
+
+4. HARDWARE ENGINEERING (20 credits)
+Compulsory Courses (8 credits):
+- CSE355: Digital System Design (3+1=4 credits) - Prerequisite: CSE345
+- CSE442: Microprocessors and Microcontrollers (3+1=4 credits) - Prerequisite: CSE360
+
+Elective Courses (choose any 3, total 12 credits):
+- CSE406: Internet of Things (3+1=4 credits) - Prerequisite: CSE405
+- CSE446: ASIC Design Using FPGA (3+1=4 credits) - Prerequisite: CSE345
+- CSE491: VLSI Design (3+1=4 credits) - Prerequisite: CSE345
+- CSE492: Robotics (3+1=4 credits) - Prerequisite: CSE366
+- CSE494: Embedded Systems (3+1=4 credits) - Prerequisite: CSE442
+
+NON-MAJOR AREA: COMPUTATIONAL THEORY
+- CSE225: Numerical Methods (3+1=4 credits) - Prerequisite: CSE103
+- CSE313: Theory of Computations (3+0=3 credits) - Prerequisite: CSE246
+- CSE460: Cryptography (3+0=3 credits) - Prerequisite: CSE246
+- CSE471: Compiler Design (3+1=4 credits) - Prerequisite: CSE246
+- CSE483: Graph Theory (3+0=3 credits) - Prerequisite: CSE246
+- CSE484: Computational Geometry (3+0=3 credits) - Prerequisite: CSE246
+
+CORE COURSES (62 credits total):
+- CSE103: Structured Programming (3+1.5=4.5 credits)
+- CSE106: Discrete Mathematics (3+0=3 credits) - Prerequisite: CSE103
+- CSE110: Object Oriented Programming (3+1.5=4.5 credits) - Prerequisite: CSE106
+- CSE200: Computer-Aided Engineering Drawing (0+1=1 credit)
+- CSE207: Data Structures (3+1=4 credits) - Prerequisite: CSE110
+- CSE209: Electrical Circuits (3+1=4 credits)
+- CSE246: Algorithms (3+1.5=4.5 credits) - Prerequisite: CSE207
+- CSE251: Electronic Circuits (3+1=4 credits) - Prerequisite: CSE209
+- CSE302: Database Systems (3+1.5=4.5 credits) - Prerequisite: CSE106
+- CSE325: Operating Systems (3+1=4 credits) - Prerequisite: CSE207
+- CSE345: Digital Logic Design (3+1=4 credits) - Prerequisite: CSE251
+- CSE347: Information System Analysis and Design (3+1=4 credits) - Prerequisite: CSE302
+- CSE360: Computer Architecture (3+0=3 credits) - Prerequisite: CSE325
+- CSE405: Computer Networks (3+1=4 credits) - Prerequisite: CSE246
+- CSE407: Green Computing (3+0=3 credits) - Prerequisite: CSE405
+- CSE487: Cyber Security, Ethics and Law (3+0=3 credits) - Prerequisite: CSE405
+- CSE495: IT Project Management and Entrepreneurship (3+0=3 credits) - Prerequisite: CSE347
+- CSE400: Capstone Project (0+6=6 credits) - Prerequisite: Completed at least 105 credit hours
+
+MATHEMATICS AND STATISTICS COURSES (15 credits):
+- MAT101: Differential and Integral Calculus (3 credits)
+- MAT102: Differential Equations and Special Functions (3 credits) - Prerequisite: MAT101
+- MAT104: Coordinate Geometry and Vector Analysis (3 credits) - Prerequisite: MAT101
+- MAT205: Linear Algebra and Complex Variable (3 credits) - Prerequisite: MAT102
+- STA102: Statistics and Probability (3 credits)
+
+NATURAL SCIENCE COURSES (11 credits):
+- PHY109: Engineering Physics-I (3+1=4 credits) - Prerequisite: MAT102
+- PHY209: Engineering Physics-II (3+0=3 credits) - Prerequisite: MAT205
+- CHE109: Engineering Chemistry (3+1=4 credits)
+
+GENERAL EDUCATION COURSES:
+Compulsory (9 credits):
+- ENG101: Basic English (3 credits)
+- ENG102: Composition and Communication Skills (3 credits) - Prerequisite: ENG101
+- GEN226: Emergence of Bangladesh (3 credits) - Prerequisite: ENG102
+
+Elective (9 credits total - choose 3 courses):
+Social Science (choose 1):
+- ECO101: Principle of Microeconomics (3 credits)
+- GEN203: Ecological System and Environment (3 credits)
+- GEN214: Development Studies (3 credits) - Prerequisite: ENG102
+- SOC317: Sociology of Science and Technology (3 credits)
+
+Arts and Humanities (choose 1):
+- GEN201: Bangladesh Studies (3 credits) - Prerequisite: ENG102
+- GEN204: Western Thought (3 credits)
+- GEN210: International Relation (3 credits) - Prerequisite: ENG102
+- SOC211: Eastern Culture and Heritage (3 credits)
+- SOC217: Religion, Ethnicity, Culture and Development in South Asia (3 credits) - Prerequisite: ENG102
+
+Business (choose 1):
+- ACT101: Financial Accounting (3 credits)
+- BUS321: Business for Engineering and Technology (3 credits) - Prerequisite: ENG102
+- BUS231: Business Communication (3 credits) - Prerequisite: ENG102
+- MGT321: Industrial Management (3 credits) - Prerequisite: ENG102
+- MGT337: Production Operations Management (3 credits) - Prerequisite: STA102
+- FIN101: Principle of Finance (3 credits) - Prerequisite: STA102
+- MKT101: Principle of Marketing (3 credits)
+
+================================
+
+GRADUATE PROGRAMS - M.S. in Computer Science and Engineering
+
+PROGRAM DETAILS:
+Total Credits: 33-40 credits (depending on track)
+Duration: 1 year minimum (3 semesters), 5 years maximum (15 semesters)
+Fee per Credit: Tk. 4,500
+Total Tuition Fees: Tk. 180,000 (for 40 credits)
+Lab & Activities Fees: Tk. 9,000
+Admission Fee: Tk. 20,000
+Grand Total: Tk. 209,000
+
+ADMISSION REQUIREMENTS:
+- 4-year Bachelor degree with minimum CGPA of 2.5 on a 4.0 scale
+- Eligible disciplines: CSE, Computer Science, Computer Engineering, Software Engineering, ICE, or equivalent
+- Engineering disciplines with calculus, statistics, and programming (prerequisites may be needed)
+- Physical/mathematical/biological science with calculus, statistics, and programming (prerequisites may be needed)
+- Must have passed HSC/Equivalent from Science group
+- Must pass university admission test
+
+FOUR MAJOR AREAS:
+1. Data Science
+2. Software Engineering
+3. Networking
+4. Systems Engineering
+
+TWO STUDY TRACKS:
+
+THESIS TRACK (33 credits):
+- Compulsory Courses for all Major Areas: 3 courses (9 credits)
+- Compulsory Courses from Major Area: 2 courses (6 credits)
+- Elective Courses from Major Area: 3 courses (9 credits)
+- Master Thesis: 9 credits
+
+PROJECT TRACK (33 credits):
+- Compulsory Courses for all Major Areas: 3 courses (9 credits)
+- Compulsory Courses from Major Area: 2 courses (6 credits)
+- Elective Courses from Major Area: 5 courses (15 credits)
+- Master Project: 3 credits
+
+COMPULSORY COURSES FOR ALL MAJORS (9 credits):
+- CSE504: Algorithms (3 credits)
+- CSE505: Database Systems (3 credits)
+- CSE596: IT Project Management and Entrepreneurship (3 credits)
+
+NON-CREDIT PREREQUISITE (if not done in Bachelor):
+- CSE503: Data Structures (3 credits) - Pass or Fail
+
+MAJOR AREA 1: DATA SCIENCE
+Non-credit prerequisite: CSE506 Artificial Intelligence (3 credits) - Pass or Fail
+
+Compulsory Courses (6 credits):
+- CSE520: Statistics for Data Science (3 credits)
+- CSE521: Machine Learning (3 credits)
+
+Elective Courses (choose 3 or 5 depending on track):
+- CSE522: Data Mining (3 credits)
+- CSE523: Digital Image Processing (3 credits)
+- CSE524: Computer Vision (3 credits)
+- CSE525: Pattern Recognition (3 credits)
+- CSE526: Bioinformatics Algorithms (3 credits)
+- CSE527: Big Data Analytics (3 credits)
+- CSE560: Distributed Systems and Algorithms (3 credits)
+
+MAJOR AREA 2: SOFTWARE ENGINEERING
+Non-credit prerequisite: CSE507 Information System Analysis and Design (3 credits) - Pass or Fail
+
+Compulsory Courses (6 credits):
+- CSE550: Software Engineering (3 credits)
+- CSE551: Software Testing and Quality Assurance (3 credits)
+
+Elective Courses (choose 3 or 5 depending on track):
+- CSE552: Simulation and Modeling (3 credits)
+- CSE553: Software Architecture (3 credits)
+- CSE554: Human Computer Interactions (3 credits)
+- CSE555: Advanced Database System (3 credits)
+- CSE556: Web Programming (3 credits)
+- CSE560: Distributed Systems and Algorithms (3 credits)
+- CSE565: Mobile Programming (3 credits)
+- CSE521: Machine Learning (3 credits)
+- CSE522: Data Mining (3 credits)
+- CSE526: Bioinformatics Algorithms (3 credits)
+- CSE527: Big Data Analytics (3 credits)
+
+MAJOR AREA 3: NETWORKING
+Non-credit prerequisite: CSE508 Computer Networks (3 credits) - Pass or Fail
+
+Compulsory Courses (6 credits):
+- CSE560: Distributed Systems and Algorithms (3 credits)
+- CSE561: Advanced Network Services and Management (3 credits)
+
+Elective Courses (choose 3 or 5 depending on track):
+- CSE562: Wireless Networks (3 credits)
+- CSE563: Cellular Networks (3 credits)
+- CSE564: Network Security and Systems (3 credits)
+- CSE565: Mobile Programming (3 credits)
+- CSE521: Machine Learning (3 credits)
+- CSE522: Data Mining (3 credits)
+- CSE527: Big Data Analytics (3 credits)
+
+MAJOR AREA 4: SYSTEMS ENGINEERING
+Non-credit prerequisite: CSE509 Digital Logic Design (3 credits) - Pass or Fail
+
+Compulsory Courses (6 credits):
+- CSE570: Internet of Things (3 credits)
+- CSE571: Microprocessors and Microcontrollers (3 credits)
+
+Elective Courses (choose 3 or 5 depending on track):
+- CSE572: ASIC Design Using FPGA (3 credits)
+- CSE573: VLSI Design (3 credits)
+- CSE574: Robotics (3 credits)
+- CSE575: Embedded Systems (3 credits)
+- CSE521: Machine Learning (3 credits)
+- CSE522: Data Mining (3 credits)
+- CSE527: Big Data Analytics (3 credits)
+- CSE560: Distributed Systems and Algorithms (3 credits)
+- CSE561: Advanced Network Services and Management (3 credits)
+
+THESIS/PROJECT:
+- CSE597: Master Project (3 credits)
+- CSE599: Master Thesis (9 credits)
+
+DEGREE REQUIREMENT:
+Minimum CGPA of 2.5 on a 4.0 scale to complete the degree.
+
+================================
+PROGRAMS & COURSES FAQ
+================================
+
+Q: How many credits is the Master in CSE program?
+A: The M.S. in CSE is 36 credits.
+
+Q: What is the duration of the B.Sc. in CSE program?
+A: It is a 4-year program requiring 140 credits.
+
+Q: What are the admission requirements for M.S. in CSE?
+A: A 4-year Bachelor degree in CSE/CS/CE/SE/ICE with minimum CGPA 2.50.
+
+Q: Is there a thesis option in Masters?
+A: Yes, students can choose between a Project (3 credits) or Thesis (9 credits) track.
+
+Q: What core courses are required for Software Engineering major?
+A: CSE412 (Software Engineering) and CSE430 (Testing & QA) are compulsory.
