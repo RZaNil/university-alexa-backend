@@ -3,14 +3,13 @@ import os
 import re
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
-# Load AI model (FREE, local)
-model = SentenceTransformer("all-MiniLM-L6-v2")
+# 🔹 Lightweight AI model (Free-tier friendly)
+model = SentenceTransformer("paraphrase-MiniLM-L3-v2")
 
-# -------- TEXT CLEANING (NO FILE CHANGE) --------
+# 🔹 Clean & split text automatically (no file editing needed)
 def clean_and_split(text):
     sentences = []
 
@@ -37,7 +36,7 @@ def clean_and_split(text):
 
     return sentences
 
-# -------- LOAD ALL TXT FILES FROM data/ --------
+# 🔹 Load all TXT files from data/ folder
 def load_documents():
     all_sentences = []
 
@@ -51,22 +50,27 @@ def load_documents():
     return all_sentences
 
 documents = load_documents()
+
+# 🔹 Precompute embeddings (lightweight model)
 doc_embeddings = model.encode(documents)
 
-# -------- AI ANSWER FUNCTION --------
+# 🔹 Manual cosine similarity (no sklearn, low memory)
+def cosine_sim(a, b):
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
 def ai_answer(question):
-    q_embedding = model.encode([question])
-    similarity = cosine_similarity(q_embedding, doc_embeddings)
-    best_index = np.argmax(similarity)
+    q_embedding = model.encode(question)
+    scores = [cosine_sim(q_embedding, emb) for emb in doc_embeddings]
+    best_index = int(np.argmax(scores))
     return documents[best_index]
 
-# -------- ALEXA WEBHOOK --------
+# 🔹 Alexa webhook
 @app.route("/", methods=["POST"])
 def alexa_webhook():
     body = request.json
     request_type = body["request"]["type"]
 
-    # When user says: "open university assistant"
+    # Launch request
     if request_type == "LaunchRequest":
         return jsonify({
             "version": "1.0",
@@ -79,7 +83,7 @@ def alexa_webhook():
             }
         })
 
-    # When user asks a question
+    # Intent request
     if request_type == "IntentRequest":
         try:
             question = body["request"]["intent"]["slots"]["query"]["value"]
@@ -99,18 +103,19 @@ def alexa_webhook():
             }
         })
 
+    # Fallback
     return jsonify({
         "version": "1.0",
         "response": {
             "outputSpeech": {
                 "type": "PlainText",
-                "text": "Sorry, I did not understand that."
+                "text": "Sorry, I could not understand your question."
             },
             "shouldEndSession": True
         }
     })
 
-# -------- RUN SERVER (RENDER COMPATIBLE) --------
+# 🔹 Render-compatible server start
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
