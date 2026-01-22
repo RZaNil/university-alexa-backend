@@ -1,5 +1,9 @@
-flask
-requests
+Flask==2.3.3
+ask-sdk-core==1.28.0
+ask-sdk-model==1.41.1
+google-generativeai==0.3.0
+requests==2.31.0
+python-dotenv==1.0.0
 
 
 
