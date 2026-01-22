@@ -5,11 +5,16 @@ import requests
 app = Flask(__name__)
 
 # 🔹 Google Gemini API
-GEMINI_API_KEY = os.environ.get("AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    raise RuntimeError("GEMINI_API_KEY is not set in Render Environment Variables")
+
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "gemini-1.5-flash:generateContent?key=" + GEMINI_API_KEY
 )
+
 
 # 🔹 Load ALL TXT files (unchanged)
 def load_university_data():
@@ -106,3 +111,4 @@ def alexa_webhook():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
