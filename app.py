@@ -1,65 +1,67 @@
 from flask import Flask, request, jsonify
 import os
-import re
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+import requests
 
 app = Flask(__name__)
 
-# ---------- TEXT CLEANING (NO FILE CHANGE) ----------
-def clean_and_split(text):
-    sentences = []
+# 🔹 Google Gemini API
+GEMINI_API_KEY = os.environ.get("AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
+GEMINI_URL = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "gemini-1.5-flash:generateContent?key=" + GEMINI_API_KEY
+)
 
-    for line in text.split("\n"):
-        line = line.strip()
-
-        if not line:
-            continue
-        if line.isupper():
-            continue
-        if re.match(r"^[0-9]+[\.\)]", line):
-            continue
-
-        parts = re.split(r"(?<=[.!?])\s+", line)
-        for p in parts:
-            if len(p.split()) > 4:
-                sentences.append(p.strip())
-
-    return sentences
-
-# ---------- LOAD ALL TXT FILES ----------
-def load_documents():
-    all_sentences = []
-
-    for filename in os.listdir("data"):
-        if filename.endswith(".txt"):
-            with open(os.path.join("data", filename),
+# 🔹 Load ALL TXT files (unchanged)
+def load_university_data():
+    text = ""
+    for file in os.listdir("data"):
+        if file.endswith(".txt"):
+            with open(os.path.join("data", file),
                       "r", encoding="utf-8", errors="ignore") as f:
-                text = f.read()
-                all_sentences.extend(clean_and_split(text))
+                text += f.read() + "\n"
+    return text
 
-    return all_sentences
+UNIVERSITY_DATA = load_university_data()
 
-documents = load_documents()
+# 🔹 Ask Gemini AI
+def ask_gemini(question):
+    prompt = f"""
+You are a university assistant.
+Answer ONLY using the information below.
+If the answer is not found, say "Sorry, I do not have that information."
 
-# ---------- TF-IDF MODEL (LOW MEMORY) ----------
-vectorizer = TfidfVectorizer(stop_words="english")
-doc_vectors = vectorizer.fit_transform(documents)
+University Information:
+{UNIVERSITY_DATA}
 
-def ai_answer(question):
-    q_vector = vectorizer.transform([question])
-    similarities = cosine_similarity(q_vector, doc_vectors)
-    best_index = int(np.argmax(similarities))
-    return documents[best_index]
+Question:
+{question}
+"""
 
-# ---------- ALEXA WEBHOOK ----------
+    payload = {
+        "contents": [
+            {
+                "parts": [
+                    {"text": prompt}
+                ]
+            }
+        ]
+    }
+
+    response = requests.post(GEMINI_URL, json=payload)
+    data = response.json()
+
+    try:
+        return data["candidates"][0]["content"]["parts"][0]["text"]
+    except:
+        return "Sorry, I could not process that request."
+
+# 🔹 Alexa webhook
 @app.route("/", methods=["POST"])
 def alexa_webhook():
     body = request.json
-    request_type = body["request"]["type"]
+    req_type = body["request"]["type"]
 
-    if request_type == "LaunchRequest":
+    if req_type == "LaunchRequest":
         return jsonify({
             "version": "1.0",
             "response": {
@@ -71,13 +73,13 @@ def alexa_webhook():
             }
         })
 
-    if request_type == "IntentRequest":
+    if req_type == "IntentRequest":
         try:
             question = body["request"]["intent"]["slots"]["query"]["value"]
         except:
             question = ""
 
-        answer = ai_answer(question)
+        answer = ask_gemini(question)
 
         return jsonify({
             "version": "1.0",
@@ -95,15 +97,12 @@ def alexa_webhook():
         "response": {
             "outputSpeech": {
                 "type": "PlainText",
-                "text": "Sorry, I could not understand your request."
+                "text": "Sorry, I did not understand."
             },
             "shouldEndSession": True
         }
     })
 
-# ---------- RUN SERVER ----------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-
-
