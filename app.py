@@ -1,22 +1,23 @@
 """
 East West University Alexa Chatbot Backend
-FINAL STABLE VERSION (Alexa + Render + Google Gemini)
+FINAL STABLE VERSION - SIMPLIFIED
 """
 
 import os
 import glob
+import json
 import logging
 from flask import Flask, jsonify, request
-from ask_sdk_webservice.flask import SkillAdapter  # FIXED IMPORT
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import (
     AbstractRequestHandler, AbstractExceptionHandler
 )
 from ask_sdk_core.utils import is_request_type, is_intent_name
+from ask_sdk_model import Response
 from ask_sdk_model.ui import SimpleCard
 
 # =====================
-# ENV CONFIGURATION (Render-safe)
+# ENV CONFIGURATION
 # =====================
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
 SKILL_ID = os.getenv("SKILL_ID", "amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6")
@@ -55,7 +56,7 @@ class DataProcessor:
                 pass
 
         combined = "\n".join(texts)
-        self.cache = combined[:12000]  # HARD LIMIT (RAM + TIME SAFE)
+        self.cache = combined[:12000]
         return self.cache
 
     def get_context(self, query, limit=1500):
@@ -104,7 +105,7 @@ Answer:
                 temperature=0.4,
                 max_output_tokens=300,
             ),
-            request_options={"timeout": 4}  # ALEXA SAFE
+            request_options={"timeout": 4}
         )
 
         text = response.text.strip()
@@ -114,13 +115,7 @@ Answer:
         return "Sorry, I could not find that information in the university records."
 
 # =====================
-# FLASK APP
-# =====================
-app = Flask(__name__)
-logging.basicConfig(level=logging.INFO)
-
-# =====================
-# ALEXA HANDLERS
+# ALEXA HANDLERS (KEEP THESE)
 # =====================
 class LaunchRequestHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
@@ -183,13 +178,48 @@ sb.add_request_handler(QueryIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_exception_handler(CatchAllExceptionHandler())
 
-skill_adapter = SkillAdapter(
-    skill=sb.create(),
-    skill_id=SKILL_ID,
-    app=app
-)
+skill = sb.create()
 
-skill_adapter.register(app, route="/alexa")
+# =====================
+# FLASK APP
+# =====================
+app = Flask(__name__)
+logging.basicConfig(level=logging.INFO)
+
+# =====================
+# SIMPLE ALEXA ENDPOINT
+# =====================
+@app.route("/alexa", methods=["POST"])
+def alexa_endpoint():
+    try:
+        # Get the Alexa request
+        alexa_request = request.get_json()
+        
+        # Verify skill ID (optional but recommended)
+        if "session" in alexa_request and "application" in alexa_request["session"]:
+            incoming_skill_id = alexa_request["session"]["application"]["applicationId"]
+            if incoming_skill_id != SKILL_ID:
+                return jsonify({"error": "Invalid skill ID"}), 403
+        
+        # Let the skill SDK handle the request
+        response = skill.invoke(alexa_request)
+        
+        # Convert response to dict
+        response_dict = json.loads(str(response))
+        return jsonify(response_dict)
+        
+    except Exception as e:
+        logging.error(f"Error processing Alexa request: {e}")
+        return jsonify({
+            "version": "1.0",
+            "response": {
+                "outputSpeech": {
+                    "type": "PlainText",
+                    "text": "Sorry, something went wrong. Please try again."
+                },
+                "shouldEndSession": False
+            }
+        })
 
 # =====================
 # HEALTH ENDPOINT
