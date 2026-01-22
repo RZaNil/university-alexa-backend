@@ -69,40 +69,51 @@ data_processor = DataProcessor(DATA_FOLDER)
 # AI ANSWER
 # =====================
 def generate_answer(question):
-    if not groq_client:
-        return "I can help with East West University information such as scholarships, courses, and faculty."
-
     context = data_processor.get_context(question)
+
+    # 🔹 If no data at all
     if not context:
         return "I don't have that information in the university records."
 
-    try:
-        completion = groq_client.chat.completions.create(
-            model="llama3-8b-8192",
-            messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You are an assistant for East West University. "
-                        "Answer ONLY using the provided information. "
-                        "If not found, say: "
-                        "'I don't have that information in the university records.'"
-                    )
-                },
-                {
-                    "role": "user",
-                    "content": f"INFORMATION:\n{context}\n\nQUESTION:\n{question}"
-                }
-            ],
-            temperature=0.3,
-            max_tokens=250   # 🔴 Alexa safe
-        )
+    # 🔹 Try AI first
+    if groq_client:
+        try:
+            completion = groq_client.chat.completions.create(
+                model="llama3-8b-8192",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are an assistant for East West University. "
+                            "Answer ONLY using the provided information. "
+                            "If not found, say: "
+                            "'I don't have that information in the university records.'"
+                        )
+                    },
+                    {
+                        "role": "user",
+                        "content": f"INFORMATION:\n{context}\n\nQUESTION:\n{question}"
+                    }
+                ],
+                temperature=0.2,
+                max_tokens=180   # 🔴 even safer
+            )
 
-        return completion.choices[0].message.content.strip()
+            text = completion.choices[0].message.content.strip()
+            if text:
+                return text
 
-    except Exception as e:
-        print("❌ Groq error:", e)
-        return "Sorry, I could not retrieve that information right now."
+        except Exception as e:
+            print("⚠️ Groq failed, using dataset fallback:", e)
+
+    # 🔹 FINAL FALLBACK (NO AI)
+    # Return first meaningful line from dataset
+    for line in context.split("\n"):
+        if len(line.strip()) > 20:
+            return line.strip()
+
+    return "I don't have that information in the university records."
+
 
 # =====================
 # FLASK APP
@@ -215,3 +226,4 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
     print("🚀 EWU Alexa Chatbot running (FINAL FIX)")
     app.run(host="0.0.0.0", port=port)
+
