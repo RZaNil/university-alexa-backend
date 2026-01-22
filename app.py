@@ -4,36 +4,45 @@ import requests
 
 app = Flask(__name__)
 
-# 🔹 Google Gemini API
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GEMINI_API_KEY = os.environ.get("AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
+
 
 if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY is not set in Render Environment Variables")
+    raise RuntimeError("GEMINI_API_KEY is not set")
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "gemini-1.5-flash:generateContent?key=" + GEMINI_API_KEY
 )
 
-
-# 🔹 Load ALL TXT files (unchanged)
+# =========================
+# 🔹 LOAD UNIVERSITY DATA
+# =========================
 def load_university_data():
     text = ""
     for file in os.listdir("data"):
         if file.endswith(".txt"):
-            with open(os.path.join("data", file),
-                      "r", encoding="utf-8", errors="ignore") as f:
+            with open(
+                os.path.join("data", file),
+                "r",
+                encoding="utf-8",
+                errors="ignore"
+            ) as f:
                 text += f.read() + "\n"
-    return text
+    # 🔴 VERY IMPORTANT: limit size to avoid timeout
+    return text[:12000]
 
 UNIVERSITY_DATA = load_university_data()
 
-# 🔹 Ask Gemini AI
+# =========================
+# 🔹 ASK GEMINI (SAFE)
+# =========================
 def ask_gemini(question):
     prompt = f"""
 You are a university assistant.
 Answer ONLY using the information below.
-If the answer is not found, say "Sorry, I do not have that information."
+If the answer is not found, say:
+"Sorry, this information is not available in the university records."
 
 University Information:
 {UNIVERSITY_DATA}
@@ -52,63 +61,68 @@ Question:
         ]
     }
 
-    response = requests.post(GEMINI_URL, json=payload)
-    data = response.json()
-
     try:
-        return data["candidates"][0]["content"]["parts"][0]["text"]
-    except:
-        return "Sorry, I could not process that request."
+        response = requests.post(
+            GEMINI_URL,
+            json=payload,
+            timeout=4   # 🔴 MUST be <= 5 sec
+        )
 
-# 🔹 Alexa webhook
+        data = response.json()
+        return data["candidates"][0]["content"]["parts"][0]["text"]
+
+    except Exception:
+        return "Sorry, I could not retrieve that information right now."
+
+# =========================
+# 🔹 ALEXA RESPONSE FORMAT
+# =========================
+def alexa_response(text, end_session):
+    return jsonify({
+        "version": "1.0",
+        "response": {
+            "outputSpeech": {
+                "type": "PlainText",
+                "text": text
+            },
+            "shouldEndSession": end_session
+        }
+    })
+
+# =========================
+# 🔹 ALEXA WEBHOOK
+# =========================
 @app.route("/", methods=["POST"])
 def alexa_webhook():
     body = request.json
-    req_type = body["request"]["type"]
+    request_type = body["request"]["type"]
 
-    if req_type == "LaunchRequest":
-        return jsonify({
-            "version": "1.0",
-            "response": {
-                "outputSpeech": {
-                    "type": "PlainText",
-                    "text": "Welcome to University Assistant. Ask me anything about the university."
-                },
-                "shouldEndSession": False
-            }
-        })
+    # 🔹 Launch
+    if request_type == "LaunchRequest":
+        return alexa_response(
+            "Welcome to University Assistant. Ask me about admissions, fees, departments, or faculty.",
+            False
+        )
 
-    if req_type == "IntentRequest":
+    # 🔹 Intent
+    if request_type == "IntentRequest":
         try:
             question = body["request"]["intent"]["slots"]["query"]["value"]
         except:
             question = ""
 
         answer = ask_gemini(question)
+        return alexa_response(answer, True)
 
-        return jsonify({
-            "version": "1.0",
-            "response": {
-                "outputSpeech": {
-                    "type": "PlainText",
-                    "text": answer
-                },
-                "shouldEndSession": True
-            }
-        })
+    # 🔹 Fallback safety
+    return alexa_response(
+        "Please ask me about university related information.",
+        True
+    )
 
-    return jsonify({
-        "version": "1.0",
-        "response": {
-            "outputSpeech": {
-                "type": "PlainText",
-                "text": "Sorry, I did not understand."
-            },
-            "shouldEndSession": True
-        }
-    })
-
+# =========================
+# 🔹 RUN SERVER (RENDER)
+# =========================
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-
