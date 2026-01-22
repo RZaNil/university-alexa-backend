@@ -23,7 +23,8 @@ load_dotenv()
 
 # 🔴 HARD-CODED FOR CAPSTONE (Render-safe)
 GOOGLE_API_KEY = "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk"
-SKILL_ID = os.getenv("amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6", "")
+SKILL_ID = "amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6"
+
 DATA_FOLDER = "data"
 
 # =====================
@@ -213,3 +214,4 @@ def home():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
