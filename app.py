@@ -4,11 +4,8 @@ import requests
 
 app = Flask(__name__)
 
-GEMINI_API_KEY = os.environ.get("AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
 
-
-if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY is not set")
+GEMINI_API_KEY = "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk"
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -126,3 +123,4 @@ def alexa_webhook():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
