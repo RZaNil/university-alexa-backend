@@ -1,6 +1,6 @@
 """
 East West University Alexa Chatbot Backend
-FINAL STABLE VERSION - SIMPLIFIED
+SIMPLE WORKING VERSION FOR RENDER
 """
 
 import os
@@ -8,13 +8,6 @@ import glob
 import json
 import logging
 from flask import Flask, jsonify, request
-from ask_sdk_core.skill_builder import SkillBuilder
-from ask_sdk_core.dispatch_components import (
-    AbstractRequestHandler, AbstractExceptionHandler
-)
-from ask_sdk_core.utils import is_request_type, is_intent_name
-from ask_sdk_model import Response
-from ask_sdk_model.ui import SimpleCard
 
 # =====================
 # ENV CONFIGURATION
@@ -26,14 +19,17 @@ DATA_FOLDER = "data"
 # =====================
 # GOOGLE GEMINI SETUP
 # =====================
+GOOGLE_AI_AVAILABLE = False
+MODEL = None
+
 try:
     import google.generativeai as genai
     genai.configure(api_key=GOOGLE_API_KEY)
     MODEL = genai.GenerativeModel("models/gemini-pro")
     GOOGLE_AI_AVAILABLE = True
+    print("Google AI loaded successfully")
 except Exception as e:
-    print("Google AI not available:", e)
-    GOOGLE_AI_AVAILABLE = False
+    print(f"Google AI not available: {e}")
 
 # =====================
 # DATA PROCESSOR
@@ -52,11 +48,13 @@ class DataProcessor:
             try:
                 with open(f, "r", encoding="utf-8", errors="ignore") as file:
                     texts.append(file.read())
-            except:
-                pass
+                    print(f"Loaded: {f}")
+            except Exception as e:
+                print(f"Error loading {f}: {e}")
 
         combined = "\n".join(texts)
         self.cache = combined[:12000]
+        print(f"Total data loaded: {len(self.cache)} characters")
         return self.cache
 
     def get_context(self, query, limit=1500):
@@ -79,7 +77,7 @@ data_processor = DataProcessor()
 # SAFE AI RESPONSE
 # =====================
 def generate_answer(question):
-    if not GOOGLE_AI_AVAILABLE:
+    if not GOOGLE_AI_AVAILABLE or MODEL is None:
         return "I can help with East West University information such as scholarships, courses, and faculty."
 
     context = data_processor.get_context(question)
@@ -101,84 +99,18 @@ Answer:
     try:
         response = MODEL.generate_content(
             prompt,
-            generation_config=genai.types.GenerationConfig(
-                temperature=0.4,
-                max_output_tokens=300,
-            ),
-            request_options={"timeout": 4}
+            generation_config={
+                "temperature": 0.4,
+                "max_output_tokens": 300,
+            }
         )
 
         text = response.text.strip()
         return text if text else "I don't have that information in the university records."
 
-    except Exception:
+    except Exception as e:
+        print(f"Error generating answer: {e}")
         return "Sorry, I could not find that information in the university records."
-
-# =====================
-# ALEXA HANDLERS (KEEP THESE)
-# =====================
-class LaunchRequestHandler(AbstractRequestHandler):
-    def can_handle(self, handler_input):
-        return is_request_type("LaunchRequest")(handler_input)
-
-    def handle(self, handler_input):
-        speech = (
-            "Welcome to East West University Assistant. "
-            "You can ask about scholarships, CSE faculty, fees, or programs."
-        )
-        handler_input.response_builder.speak(speech).ask(speech).set_card(
-            SimpleCard("EWU Assistant", speech)
-        )
-        return handler_input.response_builder.response
-
-class QueryIntentHandler(AbstractRequestHandler):
-    def can_handle(self, handler_input):
-        return is_intent_name("QueryIntent")(handler_input)
-
-    def handle(self, handler_input):
-        slots = handler_input.request_envelope.request.intent.slots
-        query = slots["query"].value if "query" in slots else ""
-
-        if not query:
-            speech = "Please ask a question about East West University."
-        else:
-            speech = generate_answer(query)
-
-        handler_input.response_builder.speak(speech).ask(
-            "Do you want to ask another question?"
-        ).set_card(SimpleCard("EWU Assistant", speech))
-
-        return handler_input.response_builder.response
-
-class FallbackIntentHandler(AbstractRequestHandler):
-    def can_handle(self, handler_input):
-        return is_intent_name("AMAZON.FallbackIntent")(handler_input)
-
-    def handle(self, handler_input):
-        speech = "Please ask me about East West University, such as scholarships, courses, or faculty."
-        handler_input.response_builder.speak(speech).ask(speech)
-        return handler_input.response_builder.response
-
-class CatchAllExceptionHandler(AbstractExceptionHandler):
-    def can_handle(self, handler_input, exception):
-        return True
-
-    def handle(self, handler_input, exception):
-        logging.error(exception, exc_info=True)
-        speech = "Sorry, something went wrong. Please try again."
-        handler_input.response_builder.speak(speech).ask(speech)
-        return handler_input.response_builder.response
-
-# =====================
-# SKILL BUILDER
-# =====================
-sb = SkillBuilder()
-sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(QueryIntentHandler())
-sb.add_request_handler(FallbackIntentHandler())
-sb.add_exception_handler(CatchAllExceptionHandler())
-
-skill = sb.create()
 
 # =====================
 # FLASK APP
@@ -195,18 +127,51 @@ def alexa_endpoint():
         # Get the Alexa request
         alexa_request = request.get_json()
         
-        # Verify skill ID (optional but recommended)
-        if "session" in alexa_request and "application" in alexa_request["session"]:
-            incoming_skill_id = alexa_request["session"]["application"]["applicationId"]
-            if incoming_skill_id != SKILL_ID:
-                return jsonify({"error": "Invalid skill ID"}), 403
+        # Simple request type detection
+        request_type = alexa_request.get("request", {}).get("type", "")
         
-        # Let the skill SDK handle the request
-        response = skill.invoke(alexa_request)
+        if request_type == "LaunchRequest":
+            response_text = "Welcome to East West University Assistant. You can ask about scholarships, CSE faculty, fees, or programs."
+        elif request_type == "IntentRequest":
+            intent_name = alexa_request.get("request", {}).get("intent", {}).get("name", "")
+            
+            if intent_name == "QueryIntent":
+                slots = alexa_request.get("request", {}).get("intent", {}).get("slots", {})
+                query = slots.get("query", {}).get("value", "") if "query" in slots else ""
+                
+                if query:
+                    response_text = generate_answer(query)
+                else:
+                    response_text = "Please ask a question about East West University."
+            else:
+                response_text = "Please ask me about East West University, such as scholarships, courses, or faculty."
+        else:
+            response_text = "Welcome to East West University Assistant. How can I help you today?"
         
-        # Convert response to dict
-        response_dict = json.loads(str(response))
-        return jsonify(response_dict)
+        # Build Alexa response
+        response = {
+            "version": "1.0",
+            "response": {
+                "outputSpeech": {
+                    "type": "PlainText",
+                    "text": response_text
+                },
+                "card": {
+                    "type": "Simple",
+                    "title": "EWU Assistant",
+                    "content": response_text
+                },
+                "reprompt": {
+                    "outputSpeech": {
+                        "type": "PlainText",
+                        "text": "Do you want to ask another question?"
+                    }
+                },
+                "shouldEndSession": False
+            }
+        }
+        
+        return jsonify(response)
         
     except Exception as e:
         logging.error(f"Error processing Alexa request: {e}")
@@ -222,15 +187,49 @@ def alexa_endpoint():
         })
 
 # =====================
+# TEST ENDPOINT
+# =====================
+@app.route("/test", methods=["GET", "POST"])
+def test_endpoint():
+    if request.method == "POST":
+        question = request.form.get("question", "")
+        if not question:
+            question = request.json.get("question", "") if request.is_json else ""
+    else:
+        question = request.args.get("question", "")
+    
+    if question:
+        answer = generate_answer(question)
+        return jsonify({
+            "question": question,
+            "answer": answer,
+            "google_ai_available": GOOGLE_AI_AVAILABLE
+        })
+    
+    return jsonify({
+        "message": "Send a POST request with 'question' parameter or use GET with ?question=your_question",
+        "endpoints": {
+            "alexa": "/alexa (POST)",
+            "test": "/test (GET/POST)",
+            "home": "/"
+        }
+    })
+
+# =====================
 # HEALTH ENDPOINT
 # =====================
 @app.route("/")
 def home():
     return jsonify({
         "status": "running",
+        "service": "EWU Alexa Chatbot",
         "dataset_files": len(glob.glob(os.path.join(DATA_FOLDER, "*.txt"))),
         "google_ai": GOOGLE_AI_AVAILABLE,
-        "alexa_endpoint": "/alexa"
+        "endpoints": {
+            "alexa": "/alexa",
+            "test": "/test",
+            "health": "/"
+        }
     })
 
 # =====================
@@ -238,4 +237,8 @@ def home():
 # =====================
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    print(f"Starting server on port {port}")
+    print(f"Google AI Available: {GOOGLE_AI_AVAILABLE}")
+    print(f"Data folder: {DATA_FOLDER}")
+    print(f"Files found: {len(glob.glob(os.path.join(DATA_FOLDER, '*.txt')))}")
+    app.run(host="0.0.0.0", port=port, debug=False)
