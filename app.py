@@ -7,7 +7,7 @@ import os
 import glob
 import logging
 from flask import Flask, jsonify, request
-from flask_ask_sdk.skill_adapter import SkillAdapter
+from ask_sdk_webservice_support.flask import SkillAdapter
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import (
     AbstractRequestHandler, AbstractExceptionHandler
@@ -214,4 +214,5 @@ def home():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
 
