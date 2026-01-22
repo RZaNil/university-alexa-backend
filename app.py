@@ -7,24 +7,19 @@ import os
 import glob
 import logging
 from flask import Flask, jsonify, request
-from ask_sdk_webservice_support.flask import SkillAdapter
+from ask_sdk_webservice.flask import SkillAdapter  # FIXED IMPORT
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import (
     AbstractRequestHandler, AbstractExceptionHandler
 )
 from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_model.ui import SimpleCard
-from dotenv import load_dotenv
 
 # =====================
-# ENV
+# ENV CONFIGURATION (Render-safe)
 # =====================
-load_dotenv()
-
-# 🔴 HARD-CODED FOR CAPSTONE (Render-safe)
-GOOGLE_API_KEY = "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk"
-SKILL_ID = "amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6"
-
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
+SKILL_ID = os.getenv("SKILL_ID", "amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6")
 DATA_FOLDER = "data"
 
 # =====================
@@ -60,7 +55,7 @@ class DataProcessor:
                 pass
 
         combined = "\n".join(texts)
-        self.cache = combined[:12000]  # 🔴 HARD LIMIT (RAM + TIME SAFE)
+        self.cache = combined[:12000]  # HARD LIMIT (RAM + TIME SAFE)
         return self.cache
 
     def get_context(self, query, limit=1500):
@@ -109,7 +104,7 @@ Answer:
                 temperature=0.4,
                 max_output_tokens=300,
             ),
-            request_options={"timeout": 4}  # 🔴 ALEXA SAFE
+            request_options={"timeout": 4}  # ALEXA SAFE
         )
 
         text = response.text.strip()
@@ -214,5 +209,3 @@ def home():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-
-
