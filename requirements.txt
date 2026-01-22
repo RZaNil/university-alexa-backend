@@ -1,10 +1,9 @@
 Flask==2.3.3
 ask-sdk-core==1.19.0
 ask-sdk-model==1.29.0
-ask-sdk-webservice-support==1.4.1
+ask-sdk-webservice==1.0.0
 google-generativeai==0.3.0
 requests==2.31.0
-python-dotenv==1.0.0
 
 
 
