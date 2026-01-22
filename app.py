@@ -1,35 +1,29 @@
 """
 East West University Alexa Chatbot Backend
-SIMPLE WORKING VERSION FOR RENDER
+FINAL VERSION – GROQ LLaMA-3 (FREE), SDK-FREE, RENDER SAFE
 """
 
 import os
 import glob
 import json
-import logging
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
+from groq import Groq
 
 # =====================
-# ENV CONFIGURATION
+# ENV CONFIG
 # =====================
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyBJbLm1W-zovQ6y4MNJCKp5scilPJ7JaNk")
-SKILL_ID = os.getenv("SKILL_ID", "amzn1.ask.skill.dc127c71-e790-4d0b-98c1-04d4070913b6")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 DATA_FOLDER = "data"
 
 # =====================
-# GOOGLE GEMINI SETUP
+# GROQ CLIENT
 # =====================
-GOOGLE_AI_AVAILABLE = False
-MODEL = None
-
-try:
-    import google.generativeai as genai
-    genai.configure(api_key=GOOGLE_API_KEY)
-    MODEL = genai.GenerativeModel("models/gemini-pro")
-    GOOGLE_AI_AVAILABLE = True
-    print("Google AI loaded successfully")
-except Exception as e:
-    print(f"Google AI not available: {e}")
+groq_client = None
+if GROQ_API_KEY:
+    groq_client = Groq(api_key=GROQ_API_KEY)
+    print("✅ Groq LLaMA-3 client initialized")
+else:
+    print("❌ GROQ_API_KEY not set")
 
 # =====================
 # DATA PROCESSOR
@@ -44,17 +38,18 @@ class DataProcessor:
             return self.cache
 
         texts = []
-        for f in glob.glob(os.path.join(self.folder, "*.txt")):
+        files = glob.glob(os.path.join(self.folder, "*.txt"))
+        print(f"📁 Loaded {len(files)} text files")
+
+        for f in files:
             try:
                 with open(f, "r", encoding="utf-8", errors="ignore") as file:
                     texts.append(file.read())
-                    print(f"Loaded: {f}")
-            except Exception as e:
-                print(f"Error loading {f}: {e}")
+            except:
+                pass
 
         combined = "\n".join(texts)
-        self.cache = combined[:12000]
-        print(f"Total data loaded: {len(self.cache)} characters")
+        self.cache = combined[:12000]   # RAM + latency safe
         return self.cache
 
     def get_context(self, query, limit=1500):
@@ -62,174 +57,144 @@ class DataProcessor:
         if not data:
             return ""
 
-        q = query.lower()
+        words = [w for w in query.lower().split() if len(w) > 2]
         lines = data.split("\n")
-        matched = [l for l in lines if any(w in l.lower() for w in q.split() if len(w) > 2)]
+        matches = [l for l in lines if any(w in l.lower() for w in words)]
 
-        if not matched:
-            return data[:limit]
-
-        return "\n".join(matched)[:limit]
+        return "\n".join(matches)[:limit] if matches else data[:limit]
 
 data_processor = DataProcessor()
 
 # =====================
-# SAFE AI RESPONSE
+# LLaMA-3 RESPONSE
 # =====================
 def generate_answer(question):
-    if not GOOGLE_AI_AVAILABLE or MODEL is None:
+    if not groq_client:
         return "I can help with East West University information such as scholarships, courses, and faculty."
 
     context = data_processor.get_context(question)
-
-    prompt = f"""
-Answer ONLY using the information below.
-If not found, say:
-"I don't have that information in the university records."
-
-Information:
-{context}
-
-Question:
-{question}
-
-Answer:
-"""
+    if not context:
+        return "I don't have that information in the university records."
 
     try:
-        response = MODEL.generate_content(
-            prompt,
-            generation_config={
-                "temperature": 0.4,
-                "max_output_tokens": 300,
-            }
+        completion = groq_client.chat.completions.create(
+            model="llama3-8b-8192",
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are an assistant for East West University. "
+                        "Answer ONLY using the provided information. "
+                        "If the answer is not present, say: "
+                        "'I don't have that information in the university records.'"
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": f"INFORMATION:\n{context}\n\nQUESTION:\n{question}"
+                }
+            ],
+            temperature=0.3,
+            max_tokens=300
         )
 
-        text = response.text.strip()
-        return text if text else "I don't have that information in the university records."
+        return completion.choices[0].message.content.strip()
 
     except Exception as e:
-        print(f"Error generating answer: {e}")
-        return "Sorry, I could not find that information in the university records."
+        print("❌ Groq error:", e)
+        return "Sorry, I could not retrieve that information right now."
 
 # =====================
 # FLASK APP
 # =====================
 app = Flask(__name__)
-logging.basicConfig(level=logging.INFO)
 
 # =====================
-# SIMPLE ALEXA ENDPOINT
+# ALEXA WEBHOOK
 # =====================
 @app.route("/alexa", methods=["POST"])
-def alexa_endpoint():
-    try:
-        # Get the Alexa request
-        alexa_request = request.get_json()
-        
-        # Simple request type detection
-        request_type = alexa_request.get("request", {}).get("type", "")
-        
-        if request_type == "LaunchRequest":
-            response_text = "Welcome to East West University Assistant. You can ask about scholarships, CSE faculty, fees, or programs."
-        elif request_type == "IntentRequest":
-            intent_name = alexa_request.get("request", {}).get("intent", {}).get("name", "")
-            
-            if intent_name == "QueryIntent":
-                slots = alexa_request.get("request", {}).get("intent", {}).get("slots", {})
-                query = slots.get("query", {}).get("value", "") if "query" in slots else ""
-                
-                if query:
-                    response_text = generate_answer(query)
-                else:
-                    response_text = "Please ask a question about East West University."
-            else:
-                response_text = "Please ask me about East West University, such as scholarships, courses, or faculty."
-        else:
-            response_text = "Welcome to East West University Assistant. How can I help you today?"
-        
-        # Build Alexa response
-        response = {
-            "version": "1.0",
-            "response": {
-                "outputSpeech": {
-                    "type": "PlainText",
-                    "text": response_text
-                },
-                "card": {
-                    "type": "Simple",
-                    "title": "EWU Assistant",
-                    "content": response_text
-                },
-                "reprompt": {
-                    "outputSpeech": {
-                        "type": "PlainText",
-                        "text": "Do you want to ask another question?"
-                    }
-                },
-                "shouldEndSession": False
-            }
-        }
-        
-        return jsonify(response)
-        
-    except Exception as e:
-        logging.error(f"Error processing Alexa request: {e}")
-        return jsonify({
-            "version": "1.0",
-            "response": {
-                "outputSpeech": {
-                    "type": "PlainText",
-                    "text": "Sorry, something went wrong. Please try again."
-                },
-                "shouldEndSession": False
-            }
-        })
+def alexa():
+    body = request.get_json()
+    req = body.get("request", {})
+    req_type = req.get("type")
 
-# =====================
-# TEST ENDPOINT
-# =====================
-@app.route("/test", methods=["GET", "POST"])
-def test_endpoint():
-    if request.method == "POST":
-        question = request.form.get("question", "")
-        if not question:
-            question = request.json.get("question", "") if request.is_json else ""
-    else:
-        question = request.args.get("question", "")
-    
-    if question:
-        answer = generate_answer(question)
-        return jsonify({
-            "question": question,
-            "answer": answer,
-            "google_ai_available": GOOGLE_AI_AVAILABLE
-        })
-    
+    response_text = ""
+    should_end = False
+
+    # Launch
+    if req_type == "LaunchRequest":
+        response_text = (
+            "Welcome to East West University Assistant. "
+            "You can ask about scholarships, CSE faculty, fees, or programs."
+        )
+
+    # Intent
+    elif req_type == "IntentRequest":
+        intent = req.get("intent", {})
+        name = intent.get("name")
+        slots = intent.get("slots", {})
+
+        user_query = ""
+        for s in slots.values():
+            if s and s.get("value"):
+                user_query = s["value"]
+                break
+
+        if name in ["AMAZON.StopIntent", "AMAZON.CancelIntent"]:
+            response_text = "Goodbye! Have a great day."
+            should_end = True
+
+        elif name == "AMAZON.HelpIntent":
+            response_text = (
+                "You can ask me about East West University scholarships, "
+                "courses, faculty, or admission information."
+            )
+
+        elif user_query:
+            response_text = generate_answer(user_query)
+
+        else:
+            response_text = "Please ask a question about East West University."
+
+    # Session end
+    elif req_type == "SessionEndedRequest":
+        response_text = "Goodbye!"
+        should_end = True
+
+    # Alexa response
     return jsonify({
-        "message": "Send a POST request with 'question' parameter or use GET with ?question=your_question",
-        "endpoints": {
-            "alexa": "/alexa (POST)",
-            "test": "/test (GET/POST)",
-            "home": "/"
+        "version": "1.0",
+        "response": {
+            "outputSpeech": {
+                "type": "PlainText",
+                "text": response_text
+            },
+            "card": {
+                "type": "Simple",
+                "title": "EWU Assistant",
+                "content": response_text
+            },
+            "reprompt": {
+                "outputSpeech": {
+                    "type": "PlainText",
+                    "text": "Do you have another question about East West University?"
+                }
+            },
+            "shouldEndSession": should_end
         }
     })
 
 # =====================
-# HEALTH ENDPOINT
+# HEALTH CHECK
 # =====================
 @app.route("/")
 def home():
+    files = glob.glob(os.path.join(DATA_FOLDER, "*.txt"))
     return jsonify({
         "status": "running",
-        "service": "EWU Alexa Chatbot",
-        "dataset_files": len(glob.glob(os.path.join(DATA_FOLDER, "*.txt"))),
-        "google_ai": GOOGLE_AI_AVAILABLE,
-        "endpoints": {
-            "alexa": "/alexa",
-            "test": "/test",
-            "health": "/"
-        }
+        "model": "LLaMA-3 via Groq",
+        "data_files": len(files),
+        "alexa_endpoint": "/alexa"
     })
 
 # =====================
@@ -237,8 +202,5 @@ def home():
 # =====================
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))
-    print(f"Starting server on port {port}")
-    print(f"Google AI Available: {GOOGLE_AI_AVAILABLE}")
-    print(f"Data folder: {DATA_FOLDER}")
-    print(f"Files found: {len(glob.glob(os.path.join(DATA_FOLDER, '*.txt')))}")
-    app.run(host="0.0.0.0", port=port, debug=False)
+    print("🚀 EWU Alexa Chatbot running with LLaMA-3")
+    app.run(host="0.0.0.0", port=port)
